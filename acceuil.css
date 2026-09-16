@@ -1068,9 +1068,8 @@ li{
     flex-shrink: 0;
     transition: background 0.2s, border-color 0.2s;
 }
-.contact-info-card:hover .contact-info-icon {
-    background: var(--accent);
-    border-color: var(--accent);
+.contact-info-card:hover .contact-info-value {
+    color: #ffd803;
 }
 
 .contact-info-label {
