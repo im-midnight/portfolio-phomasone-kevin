@@ -10,7 +10,6 @@
     /* gouttières fluides réutilisées partout à la place de 60px en dur */
     --gutter: clamp(20px, 5vw, 60px);
 }
-
 * {
     margin: 0;
     padding: 0;
