@@ -1092,7 +1092,7 @@ li{
     transition: opacity 0.2s;
     word-break: break-word;
 }
-.contact-info-value:hover { opacity: 0.7; }
+.contact-info-value:hover { color:#ffd803; }
 
 
 /* ── RÉSEAUX ── */
@@ -1202,7 +1202,7 @@ li{
 }
 .xp-skills-cat-title {
     font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     color: var(--paragraph);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -1311,9 +1311,13 @@ li{
     padding: 8px 18px;
 }
 
-.footer .row ul li a:hover {
-    opacity: 1;
-    
+.footer .row ul {
+    transition: color 0.2s, transform 0.2s;
+}
+
+.footer .row ul :hover {
+    transition: color 0.2s, transform 0.2s;
+    transform: translateY(-5px);
 }
 
 .footer .row a i{
