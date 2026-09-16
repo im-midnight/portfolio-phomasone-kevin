@@ -1347,6 +1347,7 @@ li{
     font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.5px;
+    color: var(--bg);
 }
 
 @media (max-width:720px){
