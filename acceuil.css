@@ -849,6 +849,7 @@ li{
 
 .customCheckBox .inner {
   font-weight: 900;
+  font-size: 17px;
   font-family: 'Outfit', sans-serif;
   pointer-events: none;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
