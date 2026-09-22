@@ -16,6 +16,7 @@
 }
 
 .projects-hero h1 {
+    align-self: center;
     font-family: 'ClashDisplay-Bold', sans-serif;
     font-size: clamp(3rem, 8vw, 7rem);
     font-weight: 900;
@@ -31,6 +32,8 @@
 }
 
 .projects-hero p {
+    align-self: center;
+    text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     color: var(--paragraph);
