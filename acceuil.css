@@ -584,15 +584,6 @@ li{
     text-align: center;
 }
 
-.about-hero-label{
-    font-family: 'DM Mono', monospace;
-    font-size: clamp(0.6rem, 1vw, 0.85rem);
-    color: var(--paragraph);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 1rem;
-    opacity: 0.5;
-}
 
 .about-hero-title {
   font-family: 'ClashDisplay-Bold', sans-serif;
