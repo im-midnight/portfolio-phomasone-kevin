@@ -924,10 +924,9 @@ li{
 
 /* ── GRILLE ── */
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 420px;
+    display: flex;
     gap: 2rem;
-    align-items: start;
+    justify-content: center;
 }
 
 
@@ -936,6 +935,7 @@ li{
     /* min-width: 700px cassait tout le layout mobile : la carte forçait
        le body à s'élargir et créait un scroll horizontal sur tout le
        site. Le form doit suivre la largeur de sa colonne de grille. */
+    min-width: 600px;
     width: 100%;
     background: var(--secondary);
     border: 1.5px solid var(--tertiary);
@@ -1027,99 +1027,6 @@ li{
     box-shadow: 0 6px 20px rgba(255, 216, 3, 0.35);
 }
 
-/* ── INFOS CONTACT ── */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.contact-info-card {
-    background: var(--secondary);
-    border: 1.5px solid var(--tertiary);
-    border-radius: 16px;
-    padding: 1.25rem 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    transition: all 0.25s;
-
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.2s, background 0.2s;
-}
-
-.contact-info-card:hover {
-    border-color: var(--tertiary);
-    background: var(--bg);
-    box-shadow: 0 8px 24px rgba(39, 35, 67, 0.08);
-}
-
-.contact-info-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
-    background: var(--bg);
-    border: 1.5px solid var(--tertiary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    color: var(--headline);
-    flex-shrink: 0;
-    transition: background 0.2s, border-color 0.2s;
-}
-.contact-info-card:hover .contact-info-icon {
-    background: var(--accent);
-    border-color: var(--accent);
-}
-
-.contact-info-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--paragraph);
-    opacity: 0.5;
-    margin-bottom: 0.2rem;
-}
-
-.contact-info-value {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--headline);
-    text-decoration: none;
-    transition: opacity 0.2s;
-    word-break: break-word;
-}
-.contact-info-value:hover { opacity: 0.7; }
-
-
-/* ── RÉSEAUX ── */
-.contact-socials {
-    background: var(--secondary);
-    border: 1.5px solid var(--tertiary);
-    border-radius: 16px;
-    padding: 1.5rem;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.contact-socials-title {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--paragraph);
-    opacity: 0.5;
-    margin-bottom: 1rem;
-}
-
-.contact-socials-row {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-}
 
 .social-pill {
     display: inline-flex;
@@ -1140,29 +1047,6 @@ li{
     color: var(--accent);
     border-color: var(--headline);
     transform: translateY(-2px);
-}
-
-.social-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 18px;
-  background: var(--bg);
-  border: 1.5px solid var(--tertiary);
-  border-radius: 100px;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--headline);
-  transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.15s;
-  white-space: nowrap;
-}
-
-.social-btn:hover {
-  border-color: var(--headline);
-  background: var(--headline);
-  color: var(--accent);
-  transform: translateY(-2px);
 }
 
 .xp-section {
@@ -1389,9 +1273,7 @@ li{
     .contact-grid {
         grid-template-columns: 1fr;
     }
-    .contact-info {
-        order: -1;
-    }
+
 }
 @media (max-width: 600px) {
     .contact-wrap { padding: 3rem 1.2rem 5rem; }
