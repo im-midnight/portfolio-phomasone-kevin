@@ -620,14 +620,15 @@ li{
   padding: 0 clamp(0px, 4vw, 24px) 3rem;
 }
 
-.stats-section{
+.stats-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     gap: 16px;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0.2rem var(--gutter) 3rem;
     width: 100%;
+    justify-content: center;
 }
 
 .stat-card{
@@ -706,7 +707,7 @@ li{
 .timeline::before {
   content: '';
   position: absolute;
-  left: 11px;
+  left: 20px;
   top: 5px;
   bottom: 3rem;
   width: 2px;
@@ -720,11 +721,10 @@ li{
 
 .timeline-dot {
     position: absolute;
-    left: -3rem;
+    left: -2.32rem;
     top: 4px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
     background: var(--accent);
     display: flex;
     align-items: center;
@@ -734,12 +734,13 @@ li{
     z-index: 2;
     transition: all 0.3s;
 }
-
+.desc{
+    background: #e8e8e8;
+}
 .timeline-card {
     background: var(--secondary);
-    border: 1.5px solid var(--tertiary);
     border-radius: 20px;
-    padding: 2rem;
+    padding: 1.5rem;
     transition: all 0.3s;
 }
 
@@ -755,7 +756,7 @@ li{
     justify-content: space-between;
     align-items: start;
     gap: 1rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.8rem;
 }
 .timeline-date {
     font-family: 'DM Mono', monospace;
@@ -812,7 +813,6 @@ li{
 
 /* From Uiverse.io by WhiteNervosa */ 
 .customCheckBoxHolder {
-  margin: 5px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -848,7 +848,7 @@ li{
 
 .customCheckBox .inner {
   font-weight: 900;
-  font-size: 17px;
+  font-size: 12px;
   font-family: 'Outfit', sans-serif;
   pointer-events: none;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -946,14 +946,6 @@ li{
     gap: 1.5rem;
     transform: translateY(24px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.contact-form-title {
-    font-family: 'DM Mono', monospace;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--headline);
-    margin-bottom: 0.25rem;
 }
 
 .form-group {
@@ -1075,65 +1067,86 @@ li{
 }
 
 /* ── COMPÉTENCES — ICON GRID ── */
-.xp-skills-box {
+.xp-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+.xp-skill-card {
     background: var(--secondary);
-    border: 1.5px solid var(--tertiary);
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 1.8rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.4rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-.xp-skills-cat-title {
+.xp-skill-card:hover {
+    transform: translateY(-4px);
+    background: var(--bg);
+    box-shadow: 0 16px 40px rgba(39, 35, 67, 0.12);
+}
+
+.xp-skill-card-title {
     font-family: 'DM Mono', monospace;
     font-size: 0.75rem;
     color: var(--paragraph);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     opacity: 0.6;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid var(--tertiary);
 }
-.xp-icons-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.xp-skill-icon {
+
+.xp-skill-list {
     display: flex;
     flex-direction: column;
+    gap: 0.9rem;
+}
+
+.xp-skill-item {
+    display: flex;
     align-items: center;
-    gap: 0.6rem;
-    width: 96px;
-    padding: 1.1rem 0.5rem;
-    background: var(--bg);
-    border-radius: 14px;
-    transition: all 0.2s;
+    gap: 0.75rem;
 }
-.xp-skill-icon:hover {
-    border-color: var(--headline);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(39, 35, 67, 0.1);
-}
-.xp-skill-icon img {
-    width: 48px;
-    height: 48px;
+
+.xp-skill-item img {
+    width: 30px;
+    height: 30px;
     object-fit: contain;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
-.xp-skill-icon span {
+
+.xp-skill-item span {
     font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
+    font-size: 0.85rem;
     color: var(--paragraph);
-    letter-spacing: 0.5px;
-    text-align: center;
-    opacity: 0.7;
+    letter-spacing: 0.3px;
+    opacity: 0.85;
+    transition: color 0.2s ease, opacity 0.2s ease;
 }
-.xp-skills-sep {
-    height: 1px;
-    background: var(--tertiary);
+
+.xp-skill-item:hover img {
+    opacity: 1;
+    transform: translateX(3px);
 }
+.xp-skill-item:hover span {
+    color: var(--headline);
+    opacity: 1;
+}
+
+@media (max-width: 850px) {
+    .xp-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .xp-skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Footer */
 
 .footer {
@@ -1143,7 +1156,7 @@ li{
     background: var(--headline);
     background-image: url(assets/background-footer.webp);
     background-size: cover;
-    background-position: center; /* ex: montre le bas de l'image */
+    background-position: center ; /* ex: montre le bas de l'image */
     background-repeat: no-repeat;
     color: var(--secondary);
     display: flex;
@@ -1283,7 +1296,7 @@ li{
 @media (max-width: 600px) {
     .contact-wrap { padding: 3rem 1.2rem 5rem; }
     .contact-form-card { padding: 1.75rem 1.25rem; }
-    .timeline { padding-left: 2.25rem; }
+    .timeline { padding-left: 2.95rem; }
     .timeline-dot { left: -2.25rem; }
     .timeline-header { flex-direction: column; gap: 0.4rem; }
 }

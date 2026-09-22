@@ -1,4 +1,4 @@
-/* particule.css — page projet "Analyse de Réseau Social"
+/* particule.css — page projet "Système de Particules"
    Réutilise les variables et polices définies dans style.css
    (chargé avant celui-ci dans le <head>), on ne redéfinit rien ici. */
 
@@ -27,9 +27,6 @@
     text-decoration: none;
     margin-bottom: 3rem;
     transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
-    /* le lien retour reste aligné à gauche même si tout le reste
-       de la page est centré */
-    align-self: flex-start;
 }
 .back-link svg {
     transition: transform 0.2s ease;
@@ -43,15 +40,18 @@
     transform: translateX(-3px);
 }
 
-/* ── Hero du projet (titre centré, plus de grid 2 colonnes) ── */
+/* ── Hero du projet ── */
 .hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+}
+
+.hero-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     gap: 1.1rem;
-    max-width: 780px;
-    margin: 0 auto;
 }
 
 .hero-title {
@@ -61,24 +61,19 @@
     color: var(--headline);
     line-height: 1.08;
 }
-.hero-title em {
-    font-style: italic;
-}
 
 .hero-desc {
     font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.05rem);
     line-height: 1.75;
-    margin: 2rem;
+    max-width: 560px;
     font-weight: 300;
     opacity: 0.85;
     margin-top: 0.3rem;
-    text-align: center;
 }
 
 /* ── Boutons ── */
 .hero-btns {
     display: flex;
-    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
     margin-top: 1rem;
@@ -105,57 +100,33 @@
     box-shadow: 0 6px 20px rgba(39, 35, 67, 0.2);
 }
 
-/* ── 3 photos des réseaux sociaux ── */
-.social-photos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    max-width: 1100px;
-    margin: 3.5rem auto 0;
+/* ── Capture / vidéo du projet ── */
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenshot-main {
+
+    overflow: hidden;
+}
+.screenshot-main video {
     width: 100%;
-}
-
-.social-photo {
-    border-radius: 16px;
-    border: 1.5px solid var(--tertiary);
-    background: var(--secondary);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.social-photo:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(39, 35, 67, 0.12);
-}
-
-.social-photo img {
-    height: 260px;
-    object-fit: cover;
+    height: auto;
     display: block;
-}
-
-.social-photo-caption {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--paragraph);
-    opacity: 0.6;
-    padding: 0.8rem 0;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(39, 35, 67, 0.15);
 }
 
 /* ── Responsive ── */
-@media screen and (max-width: 900px) {
-    .social-photos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .social-photos {
+@media screen and (max-width: 948px) {
+    .hero {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
-    .social-photo img {
-        height: 200px;
+    .hero-right {
+        order: -1;
     }
 }
 
