@@ -925,23 +925,23 @@ li{
 
 /* ── GRILLE ── */
 .contact-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
     gap: 2rem;
-    justify-content: center;
 }
-
 
 /* ── FORMULAIRE ── */
 .contact-form-card {
     /* min-width: 700px cassait tout le layout mobile : la carte forçait
        le body à s'élargir et créait un scroll horizontal sur tout le
        site. Le form doit suivre la largeur de sa colonne de grille. */
-    min-width: 600px;
     width: 100%;
     background: var(--secondary);
     border: 1.5px solid var(--tertiary);
     border-radius: 24px;
-    padding: 2.5rem;
+    padding: clamp(1.25rem, 5vw, 2.5rem);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
