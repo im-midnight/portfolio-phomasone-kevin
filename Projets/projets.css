@@ -35,7 +35,7 @@
     align-self: center;
     text-align: center;
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
     color: var(--paragraph);
     max-width: 500px;
     line-height: 1.7;
