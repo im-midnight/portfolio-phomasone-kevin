@@ -427,14 +427,6 @@ li{
     flex-wrap: wrap;
 }
 
-.teaser-eyebrow {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--paragraph);
-    opacity: 0.5;
-}
 
 .teaser-title-main {
     font-family: 'ClashDisplay-Bold', sans-serif;
