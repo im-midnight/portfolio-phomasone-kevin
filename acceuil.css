@@ -725,8 +725,7 @@ li{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: var(--bg);
-    border: 2px solid var(--tertiary);
+    background: var(--accent);
     display: flex;
     align-items: center;
     justify-content: center;
