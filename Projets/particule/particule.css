@@ -74,40 +74,6 @@
     margin-top: 0.3rem;
 }
 
-/* ── Badges tech ── */
-.badge-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 0.5rem;
-}
-
-.badge {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: var(--headline);
-    background: var(--secondary);
-    border: 1.5px solid var(--tertiary);
-    border-radius: 100px;
-    padding: 6px 14px;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-}
-.badge:hover {
-    background: var(--accent);
-    transform: translateY(-2px);
-}
-
-/* variantes de couleur, même logique que .teaser-tag / .tag existants */
-.badge.purple {
-    background: var(--tertiary);
-}
-.badge.orange {
-    background: var(--bg);
-    border-color: var(--accent);
-}
-
 /* ── Boutons ── */
 .hero-btns {
     display: flex;
@@ -172,9 +138,6 @@
         padding: 2rem 20px 4rem;
     }
     .hero-btns,
-    .badge-row {
-        gap: 8px;
-    }
     .btn-github {
         width: 100%;
         justify-content: center;
