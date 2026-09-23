@@ -86,6 +86,12 @@ section{
     padding: 1rem var(--gutter) 4rem;
     min-height: calc(100vh - 72px);
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
 nav {
     padding: 0 10rem;
     height: 70px;
@@ -96,9 +102,6 @@ nav {
     background-color: rgba(255, 255, 254, 0.55);
     backdrop-filter: blur(16px) saturate(180%);
     border-bottom: 1px solid rgba(186, 232, 232, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 999;
 }
 
 /* Logo / initiales à gauche */
@@ -401,7 +404,7 @@ nav {
 .teaser-title-main {
     font-family: 'Tanker-Regular',sans-serif;
     letter-spacing: .02em;
-    font-size: clamp(7rem, 4vw, 2.8rem);
+    font-size: clamp(4rem, 7vw, 7rem);
     font-weight: 700;
     color: var(--headline);
     margin-top: 0.4rem;
@@ -598,18 +601,6 @@ nav {
     }
 }
 
-.section-divider {
-    max-width: 1400px;
-    margin: 0 auto 3rem;
-    padding: 0 var(--gutter);
-}
-
-.divider-line {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--tertiary), transparent);
-}
-
-
 .social-pill {
     display: inline-flex;
     align-items: center;
@@ -805,7 +796,7 @@ nav {
     font-size:2em;
     margin:0% 1%;
 }
-.social-btn2 {
+.social-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -820,12 +811,6 @@ nav {
   white-space: nowrap;
 }
 
-.social-btn:hover2 {
-  border-color: var(--headline);
-  background: var(--headline);
-  color: var(--accent);
-  transform: translateY(-2px);
-}
 /* ligne de copyright */
 .footer .row:last-child {
   font-family: 'Outfit', sans-serif;
