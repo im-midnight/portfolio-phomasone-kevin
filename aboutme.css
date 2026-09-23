@@ -117,8 +117,7 @@
 
 .contact-title {
     font-family: 'Tanker-Regular',sans-serif;
-    letter-spacing: .02em;
-    font-size: clamp(7rem, 5vw, 4.2rem);
+    font-size: clamp(5rem, 7vw, 8rem);
     font-weight: 900;
     color: var(--headline);
     letter-spacing: -1px;
