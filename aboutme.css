@@ -160,18 +160,19 @@
 }
 
 .form-label {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Tanker-Regular',sans-serif;
     font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--paragraph);
+    letter-spacing: 3px;
+    color: var(--headline);
     opacity: 0.6;
 }
 
 .form-input,
 .form-textarea {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.95rem;
+    font-family: 'Tanker-Regular',sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
     color: var(--headline);
     background: var(--bg);
     border: 1.5px solid var(--tertiary);
@@ -202,10 +203,10 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-family: 'Tanker-Regular',sans-serif;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: 100;
     text-transform: uppercase;
     padding: 14px 28px;
     background: var(--headline);
