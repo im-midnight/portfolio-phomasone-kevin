@@ -632,16 +632,9 @@ nav {
     font-size: clamp(3rem, 5vw, 6rem);
     color: var(--paragraph);
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-}
-.xp-section-title::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--tertiary);
 }
 
 /* ── COMPÉTENCES — ICON GRID ── */
