@@ -345,9 +345,8 @@ nav {
 /* Responsive navabar */
 
 @media screen and (max-width: 948px) {
-    section#home {
-        padding: 1rem;
-        min-height: calc(100vh - 70px);
+    .name-introduction {
+        margin-top: 4rem;
     }
     .nav-right {
         display: none;
