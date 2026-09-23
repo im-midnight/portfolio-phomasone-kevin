@@ -18,9 +18,9 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-family: 'DM Mono', monospace;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
+    font-family: 'Tanker-Regular',sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     color: var(--paragraph);
     opacity: 0.6;
@@ -55,7 +55,7 @@
 }
 
 .hero-title {
-    font-family: 'ClashDisplay-Bold', sans-serif;
+    font-family: 'Tanker-Regular',sans-serif;
     font-size: clamp(2.4rem, 5vw, 3.6rem);
     font-weight: 700;
     color: var(--headline);
@@ -83,7 +83,8 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Tanker-Regular',sans-serif;
+    letter-spacing: 2px;
     font-size: 15px;
     font-weight: 600;
     padding: 12px 28px;

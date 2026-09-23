@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Phomasone</title>
     <link rel="stylesheet" href="assets/font/css/clash-display.css">
+    <link rel="stylesheet" href="assets/font/WEB/css/tanker.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="acceuil.css" rel="stylesheet">
     <link rel="preload" href="assets/icon.webp" as="image" type="image/webp">
@@ -16,19 +17,14 @@
         <!-- Navbar -->
         <nav class="navbar">
             <div class="nav-left">
-                <ul>
-                    <li><a href="#home">K<span>.</span></a></li>
-                </ul>
-            </div>
-            <div class="nav-center">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="#about">À propos</a></li>
-                </ul>       
+                <a href="index.html" class="logo">Pk<span>.</span></a>
             </div>
             <div class="nav-right">
-                <button><li><a href="#contact">Contact</a></li></button>
+                <a href="index.html">Home</a>
+                <a href="#projets">Projets</a>
+                <a href="#formation">Formation</a>
+                <a href="aboutme.html">À propos</a>
+                <a href="aboutme.html#contact" class="btn-contact">Contact</a>
             </div>
             <button class="hamburger" id="hamburgerBtn">
                 <span></span>
@@ -41,11 +37,12 @@
         <div class="mobile-menu" id="mobileMenu">
             <a href="#container">Home</a>
             <a href="#projets">Projets</a>
-            <a href="#about">À propos</a>
-            <a href="#contact" class="btn-contact-mob">Contact</a>
+            <a href="#formation">Formation</a>
+            <a href="aboutme.html">À propos</a>
+            <a href="aboutme.html#contact" class="btn-contact-mob">Contact</a>
         </div>
 
-        <section class="block home" id="home">
+        <section class=" home" id="home">
    
             <div class="name-introduction">
                 <h1 class="name">
@@ -72,195 +69,89 @@
             </div>
         </div>
 
-        <section class="block projets reveal">
+        <section class=" projets ">
             <div class="projets-teaser">
-                <div class="teaser-header">
+                <div class="teaser-header projet">
                     <div>
-                        <h2 class="teaser-title-main">Ce que j'ai construit</h2>
+                        <h2 class="teaser-title-main">PROJETS</h2>
                     </div>
-                    <a href="Projets\projet.html" class="teaser-see-all">
-                        Voir tous les projets <i class="fa-solid fa-arrow-right"></i>
-                    </a>
                 </div>
 
-                <div class="teaser-grid">
+                <div class="teaser-list">
 
-                    <a href="Projets/flip7/flip7.html" class="teaser-card teaser-large">
-                        <div class="teaser-card-top">
-                            <span class="teaser-tag">Kotlin - JavaFX</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square teaser-icon"></i>
+                    <a href="Projets/flip7/flip7.html" class="teaser-item">
+                        <div class="teaser-item-top">
+                            <h3 class="teaser-item-title">Flip7</h3>
                         </div>
-                        <h3>Flip7</h3>
-                        <p>Jeu de cartes en équipe, architecture MVC, scoreboard dynamique et graphiques de score.</p>
+                        <p class="teaser-item-desc">Jeu de cartes en équipe, architecture MVC, scoreboard dynamique et graphiques de score.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square teaser-item-icon"></i>
                     </a>
 
-                    <a href="Projets/mario/mario.html" class="teaser-card">
-                        <div class="teaser-card-top">
-                            <span class="teaser-tag">Python</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square teaser-icon"></i>
+                    <a href="Projets/mario/mario.html" class="teaser-item">
+                        <div class="teaser-item-top">
+                            <h3 class="teaser-item-title">Platformer</h3>
                         </div>
-                        <h3>Platformer</h3>
-                        <p>Jeu style Mario Maker, réalisé en équipe. Musique originale composée par mes soins.</p>
+                        <p class="teaser-item-desc">Jeu style Mario Maker, réalisé en équipe. Musique originale composée par mes soins.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square teaser-item-icon"></i>
                     </a>
 
-                    <a href="Projets/analyse/analyse.html" class="teaser-card">
-                        <div class="teaser-card-top">
-                            <span class="teaser-tag">Python - Graphviz</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square teaser-icon"></i>
+                    <a href="Projets/analyse/analyse.html" class="teaser-item">
+                        <div class="teaser-item-top">
+                            <h3 class="teaser-item-title">Analyse de réseau social</h3>
                         </div>
-                        <h3>Analyse de réseau social</h3>
-                        <p>Graphe non orienté, Dijkstra, Bellman-Ford et visualisation des communautés.</p>
+                        <p class="teaser-item-desc">Graphe non orienté, Dijkstra, Bellman-Ford et visualisation des communautés.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square teaser-item-icon"></i>
                     </a>
 
                 </div>
+
+                <a href="Projets\projet.html" class="teaser-view-all-btn">Voir tous les projets</a>
             </div>
         </section>
         
-         <div class="section-divider">
-            <div class="divider-line" id="about">
-            </div>
-        </div>
-
-
-        <section class="block about reveal" >
-            <h1 class="about-hero-title">À propos de <em>Moi</em></h1>
-            <p class="about-hero-desc">Bonjour, je m'appelle Phomasone Kevin.<br><br>
-                J'étudie actuellement en BUT Informatique. Cette formation me permet de bien 
-                comprendre le développement logiciel et la gestion de projets techniques.<br><br>
-                Je suis vraiment passionné par le code et la création numérique. 
-                Ce qui me passionne le plus, c'est de créer des projets qui combinent 
-                la technique et la créativité. Je suis curieux et je travaille bien tout seul. 
-            </p>
-
-
-            <!-- Stats -->
-            <div class="stats-section">
-                <div class="block stat-card">
-                    <div class="stat-number">2</div>
-                    <div class="stat-label">Année d'études supérieures</div>
-                </div>
-                <div class="block stat-card">
-                    <div class="stat-number">6</div>
-                    <div class="stat-label">Projets réalisés</div>
-                </div>
-                <div class="block stat-card">
-                    <div class="stat-number">3</div>
-                    <div class="stat-label">Langages maîtrisés</div>
-                </div>
-            </div>
-
-        </section>
-        
-        <div class="section-divider">
-            <div class="divider-line">
-            </div>
-        </div>
-
-
-        <section class="block formation reveal" id="formation">
-            <p class="section-title">Formation</p>
-            <div class="timeline">
-
-                <div class="timeline-item ">
-                    <div class="timeline-dot">
+        <section class=" formation " id="formation">
+            <div class="projets-teaser">
+                <div class="teaser-header-formation">
+                    <div>
+                        <h2 class="teaser-title-main">FORMATION</h2>
                     </div>
-                    <div class="timeline-card">
-                        <div class="timeline-header">
-                            <div>
-                                <p class="timeline-date">2024 — 2027</p>
-                                <h3 class="timeline-title">BUT Informatique</h3>
-                                <p class="timeline-place">IUT - Nantes</p>
+                </div>
+
+                <div class="teaser-list">
+
+                    <div class="formation-item">
+                        <span class="formation-item-date">2024 — 2027</span>
+                        <div class="formation-item-content">
+                            <h3 class="formation-item-title">BUT Informatique</h3>
+                            <p class="formation-item-place">IUT-Nantes</p>
+                            <p class="formation-item-desc">Formation universitaire technologique en informatique. Programmation, algorithmes, mathématiques, bases de données, réseaux, gestion de projet et développement web.</p>
+                            <div class="formation-item-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Golang</span>
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
                             </div>
                         </div>
-                        
-                        <p class="timeline-desc">Formation universitaire technologique en informatique. Programmation, algorithmes, mathématiques, bases de données, réseaux, gestion de projet et développement web.</p>
-                        
-                        <div class="customCheckBoxHolder">
-
-                            <input class="customCheckBoxInput"  type="checkbox">
-                            <label class="customCheckBoxWrapper" >
-                                <div class="customCheckBox">
-                                    <div class="inner">Python</div>
-                                </div>
-                            </label>
-
-                            <input class="customCheckBoxInput"  type="checkbox">
-                            <label class="customCheckBoxWrapper" >
-                                <div class="customCheckBox">
-                                    <div class="inner">Golang</div>
-                                </div>
-                            </label>
-
-                            <input class="customCheckBoxInput"  type="checkbox">
-                            <label class="customCheckBoxWrapper" >
-                                <div class="customCheckBox">
-                                    <div class="inner">Kotlin</div>
-                                </div>
-                            </label>
-
-                            <input class="customCheckBoxInput"  type="checkbox">
-                            <label class="customCheckBoxWrapper" >
-                                <div class="customCheckBox">
-                                    <div class="inner">SQL</div>
-                                </div>
-                            </label>
-
-                            <input class="customCheckBoxInput"  type="checkbox">
-                            <label class="customCheckBoxWrapper" >
-                                <div class="customCheckBox">
-                                    <div class="inner">HTML/CSS</div>
-                                </div>
-                            </label>
-
-                            <input class="customCheckBoxInput"  type="checkbox">
-                            <label class="customCheckBoxWrapper" >
-                                <div class="customCheckBox">
-                                    <div class="inner">JAVASCRIPT</div>
-                                </div>
-                            </label>
-
-                        </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot desc">  
-                    </div>
-                    <div class="timeline-card">
-                        <div class="timeline-header">
-                            <div>
-                                <p class="timeline-date">2021 — 2024</p>
-                                <h3 class="timeline-title">Baccalauréat</h3>
-                                <p class="timeline-place">Lycée Joliot Curie - Rennes</p>
+                    <div class="formation-item">
+                        <span class="formation-item-date">2021 — 2024</span>
+                        <div class="formation-item-content">
+                            <h3 class="formation-item-title">Baccalauréat</h3>
+                            <p class="formation-item-place">Lycée Joliot Curie-Rennes</p>
+                            <p class="formation-item-desc">Spécialités Numérique et Sciences Informatiques (NSI) et Mathématiques. Première expérience de la programmation, algorithmique et bases de données.</p>
+                            <div class="formation-item-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">SQL</span>
                             </div>
                         </div>
-                        <p class="timeline-desc">Spécialités Numérique et Sciences Informatiques (NSI) et Mathématiques. Première expérience de la programmation, algorithmique et bases de données.</p>
-                        <div class="customCheckBoxHolder">
-
-                            <input class="customCheckBoxInput"  type="checkbox">
-                            <label class="customCheckBoxWrapper" >
-                                <div class="customCheckBox">
-                                    <div class="inner">Python</div>
-                                </div>
-                            </label>
-
-                            <input class="customCheckBoxInput"  type="checkbox">
-                            <label class="customCheckBoxWrapper" >
-                                <div class="customCheckBox">
-                                    <div class="inner">SQL</div>
-                                </div>
-                            </label>
-
-                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
-        
-        <div class="section-divider">
-            <div class="divider-line">
-            </div>
-        </div>
         
         <section class="xp-section">
             <p class="xp-section-title">Compétences</p>
@@ -343,56 +234,7 @@
                 </div>
 
             </div>
-        </section>
-
-        <div class="section-divider">
-            <div class="divider-line">
-            </div>
-        </div>
-
-        <section class="block contact reveal" id="contact">
-            <div class="contact-wrap">
-
-                <!-- HERO -->
-                <div class="contact-hero">
-                    <h1 class="contact-title">Me <em>Contacter</em></h1>
-                </div>
-
-                <!-- GRILLE PRINCIPALE -->
-                <div class="contact-grid">
-                    <form action="https://formspree.io/f/meewqwpe" method="post">
-                        <!-- FORMULAIRE -->
-                        <div class="contact-form-card">
-
-                            <div class="form-group">
-                                <label for="name" class="form-label">Nom</label>
-                                <input id="name" name="name" type="text" class="form-input" placeholder="Phomasone">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email" class="form-label">Adresse email</label>
-                                <input  id="email" name="email" type="email" class="form-input" placeholder="phomasone.kevin@gmail.com">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea id="message" name="message" class="form-textarea" placeholder="Votre message ici..."></textarea>
-                            </div>
-
-                            <input type="text" name="_gotcha" style="display:none">
-
-                            <button type="submit" class="form-submit">
-                                <i class="fas fa-paper-plane"></i>
-                                Envoyer le message
-                            </button>
-                        </div>
-                    </form>
-
-                </div>
-
-            </div>
-        </section>
-        
+        </section>     
     </div>
     
     <footer>
@@ -414,7 +256,7 @@
 
             <div class="row">
                 <ul>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="aboutme.html#contact">Contact</a></li>
                 </ul>
             </div>
 
@@ -440,20 +282,7 @@
             })
         })
 
-        // Scroll animation
-        const observer = new IntersectionObserver((entries)=>{
-            entries.forEach((entry)=>{
-                if(entry.isIntersecting){
-                    entry.target.classList.add("show")
-                }else{
-                    entry.target.classList.remove("show")
-                }
-            })
-        })
-        const elements = document.querySelectorAll(".reveal")
-        elements.forEach(el => observer.observe(el))
     </script>
     
-            
 
 </html>

@@ -1,0 +1,226 @@
+/* ── SECTION ABOUT ── */
+.about {
+    background-color: var(--headline);
+    color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    padding: 6rem var(--gutter) 4rem;
+    position: relative;
+    overflow: hidden;
+    background-image: url(assets/bg-totoro.png);
+    background-repeat: no-repeat;
+    background-position: right -30vw bottom -2  2vw;
+    background-size: 128vw auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .about {
+        background-size: 110vw auto;
+        background-position: right -26vw bottom -5vw;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .about {
+        background-size: 110vw auto;
+        background-position: right -26vw bottom -5vw;
+    }
+}
+
+
+@media screen and (max-width: 1120px) {
+    .about {
+        background-size: 100vw auto;
+        background-position: right -26vw bottom -5vw;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .about {
+        background-size: 90vw auto;
+        background-position: right -24vw bottom 2vw;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .about {
+        background-size: 70vw auto;
+        background-position: right -18vw bottom 12vw;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    .about {
+        background-image: none;
+    }
+}
+
+.about-hero-title {
+    font-family: 'Tanker-Regular', sans-serif;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 0.95;
+    color: var(--bg);
+    max-width: 900px;
+}
+
+.about-hero-title em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.about-hero-desc {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(18px, 1.8vw, 22px);
+    font-weight: 500;
+    line-height: 1.65;
+    color: var(--bg);
+    margin-top: 10px;
+    max-width: 680px;
+}
+
+/* ── RESPONSIVE ── */
+@media screen and (max-width: 700px) {
+    .stat-card {
+        padding: 1.1rem 0.6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        padding: 5rem 24px 3rem;
+        gap: 2rem;
+    }
+}
+
+/* ── WRAP ── */
+.contact-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem var(--gutter) 7rem;
+    width: 100%;
+}
+
+/* ── HERO ── */
+.contact-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.contact-title {
+    font-family: 'Tanker-Regular',sans-serif;
+    letter-spacing: .02em;
+    font-size: clamp(7rem, 5vw, 4.2rem);
+    font-weight: 900;
+    color: var(--headline);
+    letter-spacing: -1px;
+    margin-bottom: 1.25rem;
+}
+.contact-title span {
+    color: var(--tertiary);
+}
+
+/* ── GRILLE ── */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+/* ── FORMULAIRE ── */
+.contact-form-card {
+    /* min-width: 700px cassait tout le layout mobile : la carte forçait
+       le body à s'élargir et créait un scroll horizontal sur tout le
+       site. Le form doit suivre la largeur de sa colonne de grille. */
+    width: 100%;
+    background: var(--secondary);
+    border: 1.5px solid var(--tertiary);
+    border-radius: 24px;
+    padding: clamp(1.25rem, 5vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--paragraph);
+    opacity: 0.6;
+}
+
+.form-input,
+.form-textarea {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    color: var(--headline);
+    background: var(--bg);
+    border: 1.5px solid var(--tertiary);
+    border-radius: 10px;
+    padding: 12px 16px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--paragraph);
+    opacity: 0.35;
+}
+.form-input:focus,
+.form-textarea:focus {
+    border-color: var(--headline);
+    box-shadow: 0 0 0 3px rgba(39, 35, 67, 0.07);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    background: var(--headline);
+    color: var(--accent);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.form-submit:hover {
+    background: var(--accent);
+    color: var(--headline);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 216, 3, 0.35);
+}

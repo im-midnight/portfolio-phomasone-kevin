@@ -1,5 +1,4 @@
-.hero-title em {
-    font-style: italic;
+.hero-title span {
     /* zone de dégradé plus large que la boîte de texte elle-même,
         pour couvrir le débord provoqué par l'italique */
     background: linear-gradient(
