@@ -346,8 +346,8 @@ nav {
 
 @media screen and (max-width: 948px) {
     section#home {
-        padding: 0;
-        min-height: calc(100vh - 80px);
+        padding: 1rem;
+        min-height: calc(100vh - 70px);
     }
     .nav-right {
         display: none;
