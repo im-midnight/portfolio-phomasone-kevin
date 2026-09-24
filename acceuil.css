@@ -30,7 +30,21 @@ body {
     color: var(--paragraph);
     font-family: 'Outfit', sans-serif;
 }
+#lang-toggle {
+    background: transparent;
+    border: 2px solid var(--paragraph, #ffffff);
+    color: var(--paragraph, #ffffff);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
 
+#lang-toggle:hover {
+    background-color: var(--paragraph, #ffffff);
+    color: var(--bg, #000000);
+}   
 #progress {
     z-index: 9999;
     position: fixed;
