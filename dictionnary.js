@@ -4,6 +4,7 @@ var data = {
         "education" : "Formation",
         "about" : "À propos",
         "contact" : "Contact",
+        "heroTitle": `PHOMASONE<br><span class="accent">DOAN KEVIN</span>`,
         "subtitle": "Étudiant en 2e année · BUT Informatique",
         "view_project" : "Voir mes projets",
         "cv_download" : "Télécharger CV",
@@ -79,6 +80,7 @@ var data = {
         "education" : "Education",
         "about" : "About",
         "contact" : "Contact",
+        "heroTitle": `PHOMASONE<br><span class="accent">DOAN KEVIN</span>`,
         "subtitle": "Second-year student · BSc in Computer Science",
         "view_project" : "View Projects",
         "cv_download" : "Download CV",
@@ -152,13 +154,14 @@ var data = {
     "vi": {
         "project": "Dự án",
         "education" : "Học vấn",
-        "about" : "Về tôi",
+        "about" : "Về Mình",
         "contact" : "Liên hệ",
+        "heroTitle": `PHOMASONE<br><span class="accent">ĐOÀN KEVIN</span>`,
         "subtitle": "Sinh viên năm hai · Chuyên ngành Công nghệ Thông tin",
         "view_project" : "Các dự án ",
         "cv_download" : "Tải CV",
         "teaser-item-descFLIP7" : "Trò chơi bài theo đội, kiến trúc MVC, bảng điểm động và biểu đồ điểm số.",
-        "teaser-item-descMARIO" : "Một trò chơi theo phong cách Mario Maker, được phát triển bởi cả nhóm. Nhạc nền do chính tôi sáng tác.",
+        "teaser-item-descMARIO" : "Một trò chơi theo phong cách Mario Maker, được phát triển bởi cả nhóm. Nhạc nền do chính mình sáng tác.",
         "teaser-item-titleRESEAU" : "Phân tích mạng xã hội",
         "teaser-item-descRESEAU" : "Đồ thị không định hướng, thuật toán Dijkstra, thuật toán Bellman-Ford và trực quan hóa cộng đồng.",
         "teaser-view-all-btn" : "Xem tất cả các dự án",
@@ -172,20 +175,20 @@ var data = {
         "xp-skill-card-titleB" : "Cơ sở dữ liệu",
         "xp-skill-card-titleO" : "Công cụ",
         "row" : "© 2026 Phomasone Doan Kevin - Mọi quyền được bảo lưu",
-        "about-hero-title": "Về <em>Tôi</em>",
-        "about-hero-desc": `Xin chào, tên tôi là Phomasone Doan Kevin.<br><br>
-            Tôi sinh ngày 13/08/2007 tại Thành phố Hồ Chí Minh, Việt Nam. Tôi lớn lên ở đó và đã theo học
-            toàn bộ quãng thời gian học tập tại Trường Trung học Quốc tế Pháp Marguerite Duras. Năm 2022, tôi chuyển đến
-            Pháp để tiếp tục việc học, tại đó tôi đã học trung học phổ thông rồi đại học.<br><br>
-            Khi học lớp 11, nhờ chuyên ngành Công nghệ số và Khoa học Máy tính, tôi bắt đầu học lập trình. Trước đó tôi chưa bao giờ
-            tiếp xúc với lĩnh vực này, nên những bước đầu không hề dễ dàng. Tôi đã kiên trì, và khi thi tốt nghiệp, tôi đã đạt
-            20/20 môn Toán và 18/20 môn Khoa học Máy tính. Tôi thực sự rất tự hào về điều đó.<br><br>
-            Sau khi tốt nghiệp, tôi muốn tiếp tục theo đuổi con đường này và đã nhập học chương trình Cử nhân Công nghệ Thông tin tại IUT Nantes. Chương trình
-            đào tạo này đã giúp tôi đi sâu hơn vào lĩnh vực phát triển phần mềm và học cách quản lý
-            các dự án kỹ thuật thực tế, cả khi làm việc theo nhóm lẫn độc lập. Sau này, tôi mong muốn theo học tại một trường
+        "about-hero-title": "Về <em>Mình</em>",
+        "about-hero-desc": `Xin chào, tên mình là Phomasone Đoàn Kevin, tên việt là Đoàn Minh Đức.<br><br>
+            Mình sinh ngày 13/08/2007 tại Thành phố Hồ Chí Minh, Việt Nam. Mình lớn lên ở đó và đã theo học
+            toàn bộ quãng thời gian học tập tại Trường Trung học Quốc tế Pháp Marguerite Duras. Năm 2022, mình chuyển đến
+            Pháp để tiếp tục việc học, tại đó mình đã học trung học phổ thông rồi đại học.<br><br>
+            Khi học lớp 11, nhờ chuyên ngành Công nghệ số và Khoa học Máy tính, ình bắt đầu học lập trình. Trước đó mình chưa bao giờ
+            tiếp xúc với lĩnh vực này, nên những bước đầu không hề dễ dàng. Mình đã kiên trì, và khi thi tốt nghiệp, mình đã đạt
+            20/20 môn Toán và 18/20 môn Khoa học Máy tính. Mình thực sự rất tự hào về điều đó.<br><br>
+            Sau khi tốt nghiệp, mình muốn tiếp tục theo đuổi con đường này và đã nhập học chương trình Cử nhân Công nghệ Thông tin tại IUT Nantes. Chương trình
+            đào tạo này đã giúp mình đi sâu hơn vào lĩnh vực phát triển phần mềm và học cách quản lý
+            các dự án kỹ thuật thực tế, cả khi làm việc theo nhóm lẫn độc lập. Sau này, mình mong muốn theo học tại một trường
             kỹ sư và trở thành kỹ sư phần mềm, kỹ sư trí tuệ nhân tạo (AI) hoặc kỹ sư học máy (machine learning),
-            hiện tại tôi vẫn đang cân nhắc kỹ lưỡng về lựa chọn này.`,
-        "contact-title" : "Liên hệ với <span>tôi</span>",
+            hiện tại mình vẫn đang cân nhắc kỹ lưỡng về lựa chọn này.`,
+        "contact-title" : "Liên hệ với <span>Mình</span>",
         "form-labelNom" : "Tên",
         "form-labelMail" : "Địa chỉ email",
         "form-labelMessage" : "Nội dung tin nhắn",
@@ -207,8 +210,8 @@ var data = {
         "hero-descParticule" : "Mô phỏng 2D của một hệ thống hạt được phát triển bằng ngôn ngữ Golang với thư viện Ebitengine. Dự án này hỗ trợ các tính năng như trọng lực, va chạm, các kiểu tạo hạt, sự thay đổi màu sắc và nhiều tính năng khác nữa.",
         "github": "xem trên GitHub",
         "hero-titleMario" : `<span style="color: #88ddfc";>Trò chơi đi cảnh</span><br><span>Mario Maker</span>`,
-        "hero-descMario" :"Một trò chơi platform lấy cảm hứng từ Super Mario Maker, được phát triển bằng Python kết hợp với Pygame trong năm nhất đại học. Trò chơi có trình chỉnh sửa màn chơi đầy đủ tính năng, hai loại kẻ thù có trí tuệ nhân tạo (AI), hệ thống vật phẩm, nhạc nền gốc do chính tôi sáng tác, và hỗ trợ tay cầm Xbox 360.", 
-        "hero-titleWeb" : "Các trang web<br><span>của tôi</span>",
+        "hero-descMario" :"Một trò chơi platform lấy cảm hứng từ Super Mario Maker, được phát triển bằng Python kết hợp với Pygame trong năm nhất đại học. Trò chơi có trình chỉnh sửa màn chơi đầy đủ tính năng, hai loại kẻ thù có trí tuệ nhân tạo (AI), hệ thống vật phẩm, nhạc nền gốc do chính Mình sáng tác, và hỗ trợ tay cầm Xbox 360.", 
+        "hero-titleWeb" : "Các trang web<br><span>của mình</span>",
         "hero-descWeb" : "Các trang web nhỏ được phát triển bằng HTML, CSS và JavaScript. Nhấp vào để xem trang web trực tiếp",
         "mini-card-name1": "Trang web về đồng hồ",
         "mini-card-desc1": "Dự án trang web bán hàng - Học CSS",
