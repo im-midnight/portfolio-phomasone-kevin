@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="acceuil.css" rel="stylesheet">
     <link href="aboutme.css" rel="stylesheet">
+    <script src="dictionnary.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div id="progress"></div>
@@ -18,13 +20,31 @@
             <div class="nav-left">
                 <a href="index.html" class="logo">Pk<span>.</span></a>
             </div>
-            <div class="nav-right">
-                <a href="index.html">Home</a>
-                <a href="index.html#projets">Projets</a>
-                <a href="index.html#formation">Formation</a>
-                <a href="aboutme.html">À propos</a>
-                <a href="aboutme.html#contact" class="btn-contact">Contact</a>
+            <div class="right-wrap">
+
+                <div class="nav-right">
+                    <a href="index.html">Home</a>
+                    <a data-i18n="project" href="index.html#projets">Projets</a>
+                    <a data-i18n="education" href="index.html#formation">Formation</a>
+                    <a data-i18n="about" href="aboutme.html">À propos</a>
+                    <a data-i18n="contact" href="aboutme.html#contact" class="btn-contact">Contact</a>
+
+                </div>
+
+                <div class="langWrap">
+                    <input type="radio" name="lang" value="fr" id="lang-fr" checked>
+                    <label for="lang-fr">FR</label>
+
+                    <input type="radio" name="lang" value="en" id="lang-en">
+                    <label for="lang-en">EN</label>
+
+                    <input type="radio" name="lang" value="vi" id="lang-vi">
+                    <label for="lang-vi">VI</label>
+
+                    <span></span>
+                </div>
             </div>
+
             <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu de navigation">
                 <span></span>
                 <span></span>
@@ -35,17 +55,18 @@
         <!-- Menu Mobile-->
         <div class="mobile-menu" id="mobileMenu">
             <a href="index.html">Home</a>
-            <a href="index.html#projets">Projets</a>
-            <a href="index.html#formation">Formation</a>
-            <a href="aboutme.html">À propos</a>
-            <a href="aboutme.html#contact" class="btn-contact-mob">Contact</a>
+            <a data-i18n="project" href="index.html#projets">Projets</a>
+            <a data-i18n="education" href="index.html#formation">Formation</a>
+            <a data-i18n="about" href="aboutme.html">À propos</a>
+            <a data-i18n="contact" href="aboutme.html#contact" class="btn-contact-mob">Contact</a>
         </div>
+            
     </header>
     <main>    
         <div class="container" id="container">
         <section class="block about reveal" >
-            <h1 class="about-hero-title">À propos de <em>Moi</em></h1>
-            <p class="about-hero-desc">Bonjour, je m'appelle Phomasone Doan Kevin.<br><br>
+            <h1 data-i18n-html="about-hero-title" class="about-hero-title">À propos de <em>Moi</em></h1>
+            <p data-i18n-html="about-hero-desc" class="about-hero-desc">Bonjour, je m'appelle Phomasone Doan Kevin.<br><br>
                 Je suis né le 13/08/2007 à Ho-Chi-Minh-Ville, au Vietnam. J'ai grandi là-bas et j'ai fait 
                 toute ma scolarité au lycée français international Marguerite Duras. En 2022, j'ai déménagé 
                 en France pour continuer mes études , j'y ai fait mon lycée puis mes études supérieures.<br><br>
@@ -65,7 +86,7 @@
 
                 <!-- HERO -->
                 <div class="contact-hero">
-                    <h1 class="contact-title">Me <span>Contacter</span></h1>
+                    <h1 data-i18n-html="contact-title" class="contact-title">Me <span>Contacter</span></h1>
                 </div>
 
                 <!-- GRILLE PRINCIPALE -->
@@ -75,23 +96,23 @@
                         <div class="contact-form-card">
 
                             <div class="form-group">
-                                <label for="name" class="form-label">Nom</label>
+                                <label data-i18n="form-labelNom" for="name" class="form-label">Nom</label>
                                 <input id="name" name="name" type="text" class="form-input" placeholder="Phomasone">
                             </div>
 
                             <div class="form-group">
-                                <label for="email" class="form-label">Adresse email</label>
+                                <label data-i18n="form-labelMail" for="email" class="form-label">Adresse email</label>
                                 <input  id="email" name="email" type="email" class="form-input" placeholder="phomasone.kevin@gmail.com">
                             </div>
 
                             <div class="form-group">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea id="message" name="message" class="form-textarea" placeholder="Votre message ici..."></textarea>
+                                <label data-i18n="form-labelMessage" for="message" class="form-label">Message</label>
+                                <textarea data-i18n-placeholder="contact-message-placeholder" id="message" name="message" class="form-textarea" placeholder="Votre message ici..."></textarea>
                             </div>
 
                             <input type="text" name="_gotcha" style="display:none">
 
-                            <button type="submit" class="form-submit">
+                            <button data-i18n="send_message" type="submit" class="form-submit">
                                 <i class="fas fa-paper-plane"></i>
                                 Envoyer le message
                             </button>
@@ -124,11 +145,11 @@
 
             <div class="row">
                 <ul>
-                    <li><a href="#contact" >Contact</a></li>
+                    <li><a data-i18n="contact" href="#contact" >Contact</a></li>
                 </ul>
             </div>
 
-            <div class="row">
+            <div data-i18n="row" class="row">
                 © 2026 Phomasone Doan Kevin - All rights reserved
             </div>
         </div>
