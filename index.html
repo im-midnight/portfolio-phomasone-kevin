@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/font/Tanker/css/tanker.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="acceuil.css" rel="stylesheet">
+        <script src="dictionnary.js" defer></script>
+    <script src="index.js" defer></script>
+
     <link rel="preload" href="assets/icon.webp" as="image" type="image/webp">
 </head>
 <body>
@@ -18,13 +21,29 @@
             <div class="nav-left">
                 <a href="index.html" class="logo">Pk<span>.</span></a>
             </div>
+
             <div class="nav-right">
                 <a href="index.html">Home</a>
-                <a href="#projets">Projets</a>
-                <a href="#formation">Formation</a>
-                <a href="aboutme.html">À propos</a>
-                <a href="aboutme.html#contact" class="btn-contact">Contact</a>
+                <a data-i18n="project" href="#projets">Projets</a>
+                <a data-i18n="education" href="#formation">Formation</a>
+                <a data-i18n="about" href="aboutme.html">À propos</a>
+                <a data-i18n="contact" href="aboutme.html#contact" class="btn-contact">Contact</a>
+
             </div>
+
+            <div class="langWrap">
+                <input type="radio" name="lang" value="fr" id="lang-fr" checked>
+                <label for="lang-fr">FR</label>
+
+                <input type="radio" name="lang" value="en" id="lang-en">
+                <label for="lang-en">EN</label>
+
+                <input type="radio" name="lang" value="vi" id="lang-vi">
+                <label for="lang-vi">VI</label>
+
+                <span></span>
+            </div>
+
             <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu de navigation">
                 <span></span>
                 <span></span>
@@ -34,11 +53,11 @@
 
         <!-- Menu Mobile-->
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#container">Home</a>
-            <a href="#projets">Projets</a>
-            <a href="#formation">Formation</a>
-            <a href="aboutme.html">À propos</a>
-            <a href="aboutme.html#contact" class="btn-contact-mob">Contact</a>
+            <a href="index.html">Home</a>
+            <a data-i18n="project" href="#projets">Projets</a>
+            <a data-i18n="education" href="#formation">Formation</a>
+            <a data-i18n="about" href="aboutme.html">À propos</a>
+            <a data-i18n="contact" href="aboutme.html#contact" class="btn-contact-mob">Contact</a>
         </div>
             
     </header>
@@ -51,10 +70,10 @@
                     PHOMASONE<br>
                     <span class="accent">DOAN KEVIN</span>
                 </h1>
-                <p class="subtitle">Étudiant en 2e année · BUT Informatique</p>
+                <p data-i18n="subtitle" class="subtitle">Étudiant en 2e année · BUT Informatique</p>
                 <div class="hero-cta">
-                    <a href="#projets" class="cta-primary">Voir mes projets</a>
-                    <a href="assets/cv.pdf" class="cta-secondary">Télécharger CV</a>
+                    <a data-i18n="view_project" href="#projets" class="cta-primary">Voir mes projets</a>
+                    <a data-i18n="cv_download" data-i18n-file="cv" href="assets/cv-fr.pdf" class="cta-secondary">Télécharger CV</a>
                 </div>
             </div>
 
@@ -70,7 +89,7 @@
             <div class="projets-teaser">
                 <div class="teaser-header projet">
                     <div>
-                        <h2 class="teaser-title-main">PROJETS</h2>
+                        <h2 data-i18n="teaser-title-mainPROJECT" class="teaser-title-main">PROJETS</h2>
                     </div>
                 </div>
 
@@ -80,29 +99,29 @@
                         <div class="teaser-item-top">
                             <h3 class="teaser-item-title">Flip7</h3>
                         </div>
-                        <p class="teaser-item-desc">Jeu de cartes en équipe, architecture MVC, scoreboard dynamique et graphiques de score.</p>
+                        <p data-i18n="teaser-item-descFLIP7" class="teaser-item-desc">Jeu de cartes en équipe, architecture MVC, scoreboard dynamique et graphiques de score.</p>
                         <i class="fa-solid fa-arrow-up-right-from-square teaser-item-icon"></i>
                     </a>
 
                     <a href="Projets/mario/mario.html" class="teaser-item">
                         <div class="teaser-item-top">
-                            <h3 class="teaser-item-title">Platformer</h3>
+                            <h3 class="teaser-item-title">Mario Maker</h3>
                         </div>
-                        <p class="teaser-item-desc">Jeu style Mario Maker, réalisé en équipe. Musique originale composée par mes soins.</p>
+                        <p data-i18n="teaser-item-descMARIO" class="teaser-item-desc">Jeu style Mario Maker, réalisé en équipe. Musique originale composée par mes soins.</p>
                         <i class="fa-solid fa-arrow-up-right-from-square teaser-item-icon"></i>
                     </a>
 
                     <a href="Projets/analyse/analyse.html" class="teaser-item">
                         <div class="teaser-item-top">
-                            <h3 class="teaser-item-title">Analyse de réseau social</h3>
+                            <h3 data-i18n="teaser-item-titleRESEAU" class="teaser-item-title">Analyse de réseau social</h3>
                         </div>
-                        <p class="teaser-item-desc">Graphe non orienté, Dijkstra, Bellman-Ford et visualisation des communautés.</p>
+                        <p data-i18n="teaser-item-descRESEAU" class="teaser-item-desc">Graphe non orienté, Dijkstra, Bellman-Ford et visualisation des communautés.</p>
                         <i class="fa-solid fa-arrow-up-right-from-square teaser-item-icon"></i>
                     </a>
 
                 </div>
 
-                <a href="Projets\projet.html" class="teaser-view-all-btn">Voir tous les projets</a>
+                <a data-i18n="teaser-view-all-btn" href="Projets\projet.html" class="teaser-view-all-btn">Voir tous les projets</a>
             </div>
         </section>
         
@@ -110,7 +129,7 @@
             <div class="projets-teaser">
                 <div class="teaser-header-formation">
                     <div>
-                        <h2 class="teaser-title-main">FORMATION</h2>
+                        <h2 data-i18n="teaser-title-mainEDUCATION" class="teaser-title-main">FORMATION</h2>
                     </div>
                 </div>
 
@@ -119,9 +138,9 @@
                     <div class="formation-item">
                         <span class="formation-item-date">2024 — 2027</span>
                         <div class="formation-item-content">
-                            <h3 class="formation-item-title">BUT Informatique</h3>
+                            <h3 data-i18n="formation-item-title" class="formation-item-title">BUT Informatique</h3>
                             <p class="formation-item-place">IUT-Nantes</p>
-                            <p class="formation-item-desc">Formation universitaire technologique en informatique. Programmation, algorithmes, mathématiques, bases de données, réseaux, gestion de projet et développement web.</p>
+                            <p data-i18n="formation-item-desc" class="formation-item-desc">Formation universitaire technologique en informatique. Programmation, algorithmes, mathématiques, bases de données, réseaux, gestion de projet et développement web.</p>
                             <div class="formation-item-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">Golang</span>
