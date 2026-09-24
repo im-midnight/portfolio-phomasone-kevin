@@ -126,7 +126,7 @@ var data = {
         "card-desc3" : "End-of-year project developed in 12th grade with a team of 4 people",
         "card-desc4" : "Websites developed using HTML/CSS/JavaScript",
         "card-desc5" : "Development of a game - Flip7",
-        "card-desc6" : "Social Networkd visualization",
+        "card-desc6" : "Social Network visualization",
         "back-link" : "Back to Projects",
         "hero-titleParticule" : `<span style="color: #fc8888;">Particle</span><br><span>System</span>`,
         "hero-descParticule" : "A 2D simulation of a particle system developed in Golang using the Ebitengine library. The project handles gravity, collisions, generator shapes, color variations, and much more.",
