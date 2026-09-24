@@ -103,7 +103,7 @@ var data = {
             the Marguerite Duras International French High School throughout my entire schooling. In 2022, I moved
             to France to continue my studies; I attended high school there and then went on to college.<br><br>
             It was in my 11th grade, thanks to the Digital Sciences and Computer Science track, that I started coding. I had never
-            done anything like that before, so the beginning wasn’t easy. I persevered, and on my Hight School Leaving exam, I scored
+            done anything like that before, so the beginning wasn’t easy. I carried on, and on my Hight School Leaving exam, I scored
             20/20 in math and 18/20 in computer science. I was really proud of that.<br><br>
             After that, I wanted to continue on this path and enrolled in a Bachelor’s Degree in Computer Science at the IUT in Nantes. This
             program allowed me to delve deeper into software development and learn how to manage
