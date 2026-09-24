@@ -105,8 +105,8 @@ var data = {
             It was in my 11th grade, thanks to the Digital Sciences and Computer Science track, that I started coding. I had never
             done anything like that before, so the beginning wasn’t easy. I carried on, and on my Hight School Leaving exam, I scored
             20/20 in math and 18/20 in computer science. I was really proud of that.<br><br>
-            After that, I wanted to continue on this path and enrolled in a Bachelor’s Degree in Computer Science at the IUT in Nantes. This
-            program allowed me to delve deeper into software development and learn how to manage
+            After that, I wanted to continue on this path and enrolled in a Bachelor’s Degree in Computer Science at the IUT of Nantes. This
+            program allowed me to dig deeper into software development and learn how to manage
             real technical projects, both as part of a team and on my own. After that, I’d like to attend an
             engineering school and become a software engineer, an AI engineer, or even a machine learning engineer,
             I’m still refining that decision.`,
