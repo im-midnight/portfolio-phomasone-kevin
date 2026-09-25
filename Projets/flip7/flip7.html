@@ -112,34 +112,4 @@
         </div>  
     </main>
 </body>
-    <script>
-        // Toggle thème sombre/clair
-        const themeToggle = document.getElementById('theme-toggle-input')
-        if (localStorage.getItem('theme') === 'dark') {
-            themeToggle.checked = true
-        }
-        themeToggle.addEventListener('change', () => {
-            if (themeToggle.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark')
-                localStorage.setItem('theme', 'dark')
-            } else {
-                document.documentElement.removeAttribute('data-theme')
-                localStorage.setItem('theme', 'light')
-            }
-        })
-
-        const menuHamburger = document.querySelector(".hamburger")
-        const navLinks = document.querySelector(".mobile-menu")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('open') // Rajout la classe mobile menu au variable navLinks
-        })
-        // Ferme le menu dès qu'on clique sur un lien à l'intérieur
-        const navLinksMobile = document.querySelectorAll('.mobile-menu a')
-        navLinksMobile.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('open')
-            })
-        })
-    </script>
 </html>
