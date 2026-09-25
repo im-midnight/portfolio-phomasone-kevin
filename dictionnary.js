@@ -74,6 +74,15 @@ var data = {
         "hero-descFlip7" : "Un jeu de cartes Flip7 développée en Kotlin avec JavaFX. Architecture MVC stricte, système de scoreboard avec historique des manches, visualisation des scores en graphique, affichage du podium en fin de partie.",
         "hero-titleReseaux" : "<span>Analyse de</span><br>Réseau Social",
         "hero-descReseaux" : "Analyse des graphe de réseaux sociaux (Deezer-Git-Twitch) développée en Python. Le projet gère la détection et le filtrage des nœuds isolés, l'application de dégradés de couleur selon le degré et la proximité, ainsi qu'un algorithme de Dijkstra optimisé sur la plus grande composante connexe.",
+        "policy" : "Politique de confidentialité",
+        "policy-section-title1" : "1. Collecte des données et Cookies",
+        "policy-section-title2" : "2. Mesures réalisées",
+        "policy-section-title3" : "3. Droits",
+        "policy-section-title4" : "4. Durée de vie d'un ID Umami",
+        "desc1" : `Pour pouvoir estimer une mesure globale de la fréquentation du site web portfolio-phomasone-kevin.vercel.app par ma seule et unique personne (PHOMASONE Doan Kevin), ce site utilise
+                    <a href="https://umami.is" target="_blank" rel="noopener">Umami</a>.
+                    Il permet entre autres de mesurer l'audience tout en respectant la vie privée. C'est la raison pour laquelle aucune pop-up d'acceptation de cookie(s) n'a été affichée, puisque
+                    <a href="https://umami.is" target="_blank" rel="noopener">Umami</a> n'en utilise aucun.`,
     },
     "en": {
         "project": "Projects",
@@ -150,6 +159,15 @@ var data = {
         "hero-descFlip7" : "Flip7 is a card game developed in Kotlin using JavaFX. It features a strict MVC architecture, a scoreboard system with round history, graphical score displays, and a leaderboard displayed at the end of the game.",
         "hero-titleReseaux" : "<span>Analysis of</span><br>Social Networks",
         "hero-descReseaux" : "Analysis of social network graphs (Deezer, Git, Twitch) developed in Python. The project handles the detection and filtering of isolated nodes, the application of color gradients based on degree and proximity, and a Dijkstra algorithm optimized for the largest connected component.",
+        "policy" : "Privacy Policy",
+        "policy-section-title1" : "1. Data Collection and Cookies",
+        "policy-section-title2" : "2. Measures Taken",
+        "policy-section-title3" : "3. Rights",
+        "policy-section-title4" : "4. Lifespan of an Umami ID",
+        "desc1" : `In order to estimate an overall measure of traffic to the website portfolio-phomasone-kevin.vercel.app by myself alone (PHOMASONE Doan Kevin), this site uses
+                    <a href="https://umami.is" target="_blank" rel="noopener">Umami</a>.
+                    Among other things, it allows for audience measurement while respecting privacy. This is why no cookie consent pop-up has been displayed, since
+                    <a href="https://umami.is" target="_blank" rel="noopener">Umami</a> does not use any cookies.`,
     },
     "vi": {
         "project": "Dự án",
@@ -225,6 +243,15 @@ var data = {
         "hero-descFlip7" : "Flip7 là một trò chơi bài được phát triển bằng Kotlin và JavaFX. Áp dụng kiến trúc MVC nghiêm ngặt, hệ thống bảng điểm có lịch sử các ván đấu, hiển thị điểm số dưới dạng biểu đồ, và hiển thị bảng xếp hạng khi kết thúc ván chơi.",
         "hero-titleReseaux" : "<span>Phân tích</span><br>Mạng xã hội",
         "hero-descReseaux" : "Phân tích đồ thị mạng xã hội (Deezer-Git-Twitch) được phát triển bằng Python. Dự án này thực hiện việc phát hiện và lọc các nút cô lập, áp dụng các sắc thái màu dựa trên độ kết nối và độ gần, cũng như thuật toán Dijkstra được tối ưu hóa trên thành phần liên kết lớn nhất.",
+        "policy" : "Chính sách bảo mật",
+        "policy-section-title1" : "1. Thu thập dữ liệu và Cookie",
+        "policy-section-title2" : "2. Các biện pháp đã thực hiện",
+        "policy-section-title3" : "3. Quyền lợi",
+        "policy-section-title4" : "4. Thời hạn tồn tại của ID Umami",
+        "desc1" : `Để có thể ước tính tổng lượng truy cập vào trang web portfolio-phomasone-kevin.vercel.app do chính tôi (PHOMASONE Doan Kevin) thực hiện, trang web này sử dụng
+                    <a href="https://umami.is" target="_blank" rel="noopener">Umami</a>.
+                    Công cụ này, trong số những tính năng khác, cho phép đo lường lượng truy cập đồng thời tôn trọng quyền riêng tư. Đó là lý do tại sao không có cửa sổ bật lên nào yêu cầu chấp nhận cookie được hiển thị, vì
+                    <a href="https://umami.is" target="_blank" rel="noopener">Umami</a> không sử dụng bất kỳ cái nào.`,
     }
 };
 
