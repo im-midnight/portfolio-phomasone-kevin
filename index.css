@@ -663,8 +663,9 @@ nav {
 }
 
 .tag {
-    font-family: 'ClashDisplay-Bold', sans-serif;
+    font-family: 'DM Mono', monospace;
     font-size: 0.8rem;
+    font-weight: 600;
     background: var(--bg);
     color: var(--paragraph);
     padding: 3px 10px;

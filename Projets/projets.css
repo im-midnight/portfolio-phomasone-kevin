@@ -170,14 +170,15 @@
 }
 
 .customCheckBox .inner {
-  font-size: 18px;
-  font-weight: 900;
-  font-family: 'Outfit', sans-serif;
-  pointer-events: none;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 300ms;
-  transition-property: transform;
-  transform: translateY(0px);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Tanker-Regular',sans-serif;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: transform;
+    transform: translateY(0px);
 }
 
 .customCheckBox:hover .inner {
