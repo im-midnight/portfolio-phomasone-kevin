@@ -44,7 +44,110 @@ nav {
     justify-content: space-between;
     backdrop-filter: blur(16px) saturate(180%);
 }
+/* ── Toggle thème (même logique visuelle que .langWrap) ── */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.theme-toggle input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.theme-toggle-track {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    border-radius: 100px;
+    background-color: var(--secondary);
+    transition: background-color 0.3s ease;
+}
+.theme-toggle-thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--bg);
+    box-shadow: 0 2px 6px rgba(39, 35, 67, 0.25);
+    transition: left 0.3s ease;
+}
+.theme-toggle input:checked ~ .theme-toggle-track .theme-toggle-thumb {
+    left: 22px;
+}
+.utility-wrap{
+    display: flex;
+    align-items: center;
+}
 
+.langWrap {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px;
+    border-radius: 100px;
+    position: relative;
+    background-color: var(--secondary);
+    margin-left: 8px;
+}
+
+.langWrap label {
+    width: 34px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--paragraph);
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.langWrap input {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.langWrap span {
+    height: 28px;
+    width: 34px;
+    border-radius: 100px;
+    background: var(--bg);
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    box-shadow: 0 2px 6px rgba(39, 35, 67, 0.12);
+    transition: left 0.3s ease-in-out;
+}
+
+.langWrap input#lang-fr:checked ~ span {
+    left: 3px;
+}
+.langWrap input#lang-en:checked ~ span {
+    left: 37px;
+}
+.langWrap input#lang-vi:checked ~ span {
+    left: 71px;
+}
+
+.langWrap input:checked + label {
+    color: var(--headline);
+}
+
+#lang-toggle:hover {
+    background-color: var(--paragraph, #ffffff);
+    color: var(--bg, #000000);
+}   
 
 .back-link {
   display: inline-flex;
@@ -234,7 +337,6 @@ footer {
     font-size: 1rem;
     letter-spacing: 1px;
 }
-
 /* ── Responsive ── */
 @media screen and (max-width: 1012px) {
     nav {

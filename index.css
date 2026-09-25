@@ -389,7 +389,7 @@ nav {
     padding: 12px 16px;
     font-size: 16px;
     font-weight: 600;
-    color: var(--paragraph);
+    color: var(--headline);
     text-decoration: none;
     border-radius: 12px;
     text-align: center;
@@ -398,7 +398,7 @@ nav {
     transition: background 0.2s, color 0.2s;
 }
 .mobile-menu a:hover {
-    background: rgba(186, 232, 232, 0.4);
+    background: var(--secondary);
     color: var(--headline);
 }
 .mobile-menu .btn-contact-mob {
@@ -418,13 +418,20 @@ nav {
     background: var(--accent);
     color: var(--headline);
 }
-
+.utility-wrap{
+    display: flex;
+    align-items: center;
+}
 /* Responsive navabar */
 @media screen and (max-width: 1012px) {
-    .langWrap {
+
+    .utility-wrap {
         position: absolute;
         top: 20px;
-        right: 100px; /* laisse la place au hamburger à droite */
+        right: 100px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
     .name-introduction {
         margin-top: 4rem;
@@ -809,7 +816,10 @@ nav {
 }
 
 /* Footer */
-
+/* [data-theme="dark"] .footer {
+    background-color: var(--headline);
+    background-image: url(assets/background-footer-dark.jpg);
+} */
 .footer {
     /* même logique de contraste que .nav-right button : fond foncé
        (--headline) + accent, pour trancher avec le reste du site qui
@@ -975,9 +985,9 @@ nav {
     --bg:        #1c1a2e; /* variante assombrie de --headline (#272343) */
     --headline:  #fffffe; /* devient le --bg clair d'origine */
     --paragraph: #b6b4cf; /* --paragraph éclairci pour rester lisible sur fond sombre */
-    --accent:    #1d0f54; /* inchangé : reste le point chaud, comme la lumière aux fenêtres */
+    --accent:    #402c90; /* inchangé : reste le point chaud, comme la lumière aux fenêtres */
     --secondary: #322f4d; /* --secondary assombri, garde la même teinte violette */
-    --tertiary:  #251D56; /* --tertiary assombri, sert de bordures/contours */
+    --tertiary:  #312c56; /* --tertiary assombri, sert de bordures/contours */
 }
 
 /* le footer utilise --headline comme fond en light mode ;

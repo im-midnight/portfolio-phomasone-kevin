@@ -118,7 +118,6 @@
 
 .card-link:hover svg,
 .project-card:hover .card-link  {
-    color: var(--accent);
     transform: translate(3px, -3px);
     transition: transform 0.2s ease, color 0.2s ease;
     transform: scale(1.5);
@@ -233,11 +232,8 @@
     height: 250%;
     border: none;
     transform: scale(0.4);
+    border-radius: 14px;
     transform-origin: top left;
-}
-
-.project-card:hover .card-iframe-wrap {
-    border-color: var(--accent);
 }
 
 @keyframes appear{

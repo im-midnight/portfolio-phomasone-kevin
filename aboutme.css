@@ -17,6 +17,7 @@
 
 @media screen and (max-width: 1300px) {
     .about {
+        background-color: #272343;
         background-size: 110vw auto;
         background-position: right -26vw bottom -5vw;
     }
@@ -36,6 +37,7 @@
         background-position: right -26vw bottom -5vw;
     }
 }
+
 
 
 @media screen and (max-width: 980px) {
