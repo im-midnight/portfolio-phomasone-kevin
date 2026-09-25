@@ -7,6 +7,7 @@
     --secondary: #e3f6f5;
     --tertiary:  #bae8e8;
 }
+
 .projects-hero{
     display: flex;
     flex-direction: column;
