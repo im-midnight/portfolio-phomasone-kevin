@@ -4,54 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Phomasone — Web</title>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="d459ac0b-8b26-449f-b033-b736650e3a74"></script>
+    <meta name="description" content="Portfolio de Kevin Phomasone, étudiant en BUT Informatique à l'IUT de Nantes. Découvrez mes compétences et projets en développement web et logiciel.">
+    <link rel="stylesheet" href="../assets/font/ClashDisplay/css/clash-display.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../../assets/font/css/clash-display.css">
-    <link href="../../acceuil.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/font/ClashDisplay/css/clash-display.css">
+    <link rel="stylesheet" href="../../assets/font/Tanker/css/tanker.css">
+    <link href="../../index.css" rel="stylesheet">
     <link href="web.css" rel="stylesheet">
+    <script src="../../dictionnary.js" defer></script>
+    <script src="../../index.js" defer></script>
 </head>
 <body>
-     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <ul>
-                <li><a href="../index.html">K<span>.</span></a></li>
-            </ul>
-        </div>
-        <div class="nav-center">
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../projet.html">Projets</a></li>
-                <li><a href="../../index.html#about">À propos</a></li>
-            </ul>  
-        </div>
-        <div class="nav-right">
-            <button><li><a href="../../index.html#contact">Contact</a></li></button>
-        </div>
-        <button class="hamburger" id="hamburgerBtn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="../../index.html" class="logo">Pk<span>.</span></a>
+            </div>
+            <div class="right-wrap">
 
-    <!-- Menu Mobile-->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="../../index.html">Home</a>
-        <a href="../projet.html">Projets</a>
-        <a href="../../index.html#about">À propos</a>
-        <a href="../../index.html#contact" class="btn-contact-mob">Contact</a>
-    </div>
+                <div class="nav-right">
+                    <a href="../../index.html">Home</a>
+                    <a data-i18n="project" href="../projet.html">Projets</a>
+                    <a data-i18n="education" href="../../index.html#formation">Formation</a>
+                    <a data-i18n="about" href="../../aboutme.html">À propos</a>
+                    <a data-i18n="contact" href="../../aboutme.html#contact" class="btn-contact">Contact</a>
 
-    <div class="parent">
+                </div>
+
+                <div class="langWrap">
+                    <input type="radio" name="lang" value="fr" id="lang-fr" checked>
+                    <label for="lang-fr">FR</label>
+
+                    <input type="radio" name="lang" value="en" id="lang-en">
+                    <label for="lang-en">EN</label>
+
+                    <input type="radio" name="lang" value="vi" id="lang-vi">
+                    <label for="lang-vi">VI</label>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu de navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Menu Mobile-->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../../index.html">Home</a>
+            <a data-i18n="project" href="../projet.html">Projets</a>
+            <a data-i18n="education" href="../../index.html#formation">Formation</a>
+            <a data-i18n="about" href="../../aboutme.html">À propos</a>
+            <a data-i18n="contact" href="../../aboutme.html#contact" class="btn-contact-mob">Contact</a>
+        </div>
+            
+    </header>
+    <main>
         
         <div class="page-wrap">
             <a href="../projet.html" class="back-link">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M1 7L7 1M1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Retour aux projets
+                <span data-i18n="back-link">Retour aux projets</span>
             </a>
             <div class="cent">
-                <h1 class="hero-title">Mes Sites<br><em>Web</em></h1>
-                <p class="hero-desc">Petites sites web développées en HTML, CSS et JavaScript. Clique sur une carte pour voir le site en direct</p>
+                <h1 data-i18n-html="hero-titleWeb" class="hero-title">Mes Sites<br><span>Web</span></h1>
+                <p data-i18n="hero-descWeb" class="hero-desc">Petites sites web développées en HTML, CSS et JavaScript. Clique sur une carte pour voir le site en direct</p>
             </div>
 
             
@@ -67,15 +89,14 @@
                             <iframe src="Folex/page-acceuil/acceuil.html" tabindex="-1" aria-hidden="true"></iframe>
                         </div>
                         <div class="card-overlay">
-                            <a href="Folex/page-acceuil/acceuil.html" target="_blank" class="card-link overlay-label">
+                            <a data-i18n="card-link" href="Folex/page-acceuil/acceuil.html" target="_blank" class="card-link overlay-label">
                                 Ouvrir
                             </a>
                         </div>
                     </div>
                     <div class="card-info">
-                        <div class="card-accent" style="background: linear-gradient(90deg,#4ade80,#16a34a)"></div>
-                        <div class="card-name">Site Web de Montre</div>
-                        <p class="card-desc">Projet de Site marchandise - Apprentissage du css</p>
+                        <div data-i18n="mini-card-name1" class="card-name">Site Web de Montre</div>
+                        <p data-i18n="mini-card-desc1" class="card-desc">Projet de Site marchandise - Apprentissage du css</p>
                         <div class="card-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -84,7 +105,7 @@
                 </div>
 
                 <!-- =============================================
-                    CARTE 1 — BMI Calculator
+                    CARTE 2 — BMI Calculator
                     Remplace "bmi/index.html" par ton vrai chemin
                     ============================================= -->
                 <div class="site-card">
@@ -99,16 +120,15 @@
                         </div>
 
                         <div class="card-overlay">
-                            <a href="realbmi/index.html" target="_blank" class="card-link overlay-label">
+                            <a data-i18n="card-link" href="realbmi/index.html" target="_blank" class="card-link overlay-label">
                                 Ouvrir
                             </a>
                         </div>
            
                     </div>
                     <div class="card-info">
-                        <div class="card-accent" style="background: linear-gradient(90deg,#fb923c,#ef4444)"></div>
-                        <div class="card-name">BMI Calculator</div>
-                        <p class="card-desc">Calcul de l'indice de masse corporelle en fonction du poids et de la taille.</p>
+                        <div data-i18n="mini-card-name2" class="card-name">BMI Calculator</div>
+                        <p data-i18n="mini-card-desc2" class="card-desc">Calcul de l'indice de masse corporelle en fonction du poids et de la taille.</p>
                         <div class="card-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -118,7 +138,7 @@
                 </div>
 
                 <!-- =============================================
-                    CARTE 2 — Calculatrice
+                    CARTE 3 — Calculatrice
                     Remplace "calculatrice/index.html" par ton vrai chemin
                     ============================================= -->
                 <div class="site-card">
@@ -132,15 +152,14 @@
                             <iframe src="Calculator/index.html" tabindex="-1" aria-hidden="true"></iframe>
                         </div>
                         <div class="card-overlay">
-                            <a href="Calculator/index.html" target="_blank" class="card-link overlay-label">
+                            <a data-i18n="card-link" href="Calculator/index.html" target="_blank" class="card-link overlay-label">
                                 Ouvrir
                             </a>
                         </div>
                     </div>
                     <div class="card-info">
-                        <div class="card-accent" style="background: linear-gradient(90deg,#38bdf8,#0284c7)"></div>
-                        <div class="card-name">Calculatrice</div>
-                        <p class="card-desc">Calculatrice simple avec les opérations de base : addition, soustraction, multiplication, division.</p>
+                        <div data-i18n="mini-card-name3" class="card-name">Calculatrice</div>
+                        <p data-i18n="mini-card-desc3" class="card-desc">Calculatrice simple avec les opérations de base : addition, soustraction, multiplication, division.</p>
                         <div class="card-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -150,7 +169,7 @@
                 </div>
 
                 <!-- =============================================
-                    CARTE 3 — Convertisseur de température
+                    CARTE 4 — Convertisseur de température
                     Remplace "convertisseur/index.html" par ton vrai chemin
                     ============================================= -->
                 <div class="site-card">
@@ -164,15 +183,14 @@
                             <iframe src="temperature/index.html" tabindex="-1" aria-hidden="true"></iframe>
                         </div>
                         <div class="card-overlay">
-                            <a href="temperature/index.html" target="_blank" class="card-link overlay-label">
+                            <a data-i18n="card-link" href="temperature/index.html" target="_blank" class="card-link overlay-label">
                                 Ouvrir
                             </a>
                         </div>
                     </div>
                     <div class="card-info">
-                        <div class="card-accent" style="background: linear-gradient(90deg,#4ade80,#16a34a)"></div>
-                        <div class="card-name">Convertisseur de Température</div>
-                        <p class="card-desc">Conversion des températures entre Celsius, Fahrenheit et Kelvin en temps réel.</p>
+                        <div data-i18n="mini-card-name4" class="card-name">Convertisseur de Température</div>
+                        <p data-i18n="mini-card-desc4" class="card-desc">Conversion des températures entre Celsius, Fahrenheit et Kelvin en temps réel.</p>
                         <div class="card-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -183,7 +201,7 @@
 
             </div>
         </div>
-    </div>
+    </main>
 
 </body>
     <script>

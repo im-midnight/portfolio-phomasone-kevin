@@ -17,23 +17,21 @@
 }
 
 .projects-hero h1 {
-    font-family: 'ClashDisplay-Bold', sans-serif;
+    align-self: center;
+    font-family: 'Tanker-Regular',sans-serif;
     font-size: clamp(3rem, 8vw, 7rem);
     font-weight: 900;
     color: var(--headline);
     margin: 0 0 1.5rem;
     line-height: 1;
-    letter-spacing: -2px;
-}
-
-.projects-hero h1 em {
-    font-style: italic;
-    color: var(--tertiary);
+    letter-spacing: 2px;
 }
 
 .projects-hero p {
+    align-self: center;
+    text-align: center;
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
     color: var(--paragraph);
     max-width: 500px;
     line-height: 1.7;
@@ -58,10 +56,14 @@
     margin: 0 auto;
     padding: 0 3rem 3rem;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 500px));
+    gap: 2rem;
     justify-content: center;
 }
+.card-size {
+    grid-column: 100%;
+}
+
 .project-card {
     background: var(--secondary);
     border: 2px solid #bae8e8;
@@ -76,15 +78,6 @@
     box-shadow: 0 30px 60px rgba(39, 35, 67, 0.12);
 }
 
-
-.card-large {
-  grid-column: span 7;
-}
-
-.card-medium {
-  grid-column: span 5;
-}
-
 .card-inner {
     padding: 2.5rem;
     height: 100%;
@@ -95,22 +88,14 @@
     justify-content: center;
     min-height: 320px;
 }
-
-.card-number {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--paragraph);
-    letter-spacing: 2px;
-    opacity: 0.4;
-}
-
 .card-title {
-    font-family: 'ClashDisplay-Semibold', sans-serif;
+    font-family: 'Tanker-Regular',sans-serif;
     font-size: clamp(1.4rem, 2.5vw, 2rem);
-    font-weight: 700;
+    font-weight: 500;
     color: var(--headline);
     margin: 0 0 0.75rem;
     line-height: 1.2;
+    letter-spacing: 1px;
 }
 
 .card-desc {
@@ -141,14 +126,6 @@
     transition: all 0.25s;
 }
 
-
-.projects-grid:hover .project-card {
-  opacity: 0.5;
-}
-
-.projects-grid .project-card:hover {
-  opacity: 1;
-}
 
 .card-link:hover svg,
 .project-card:hover .card-link  {
@@ -194,14 +171,15 @@
 }
 
 .customCheckBox .inner {
-  font-size: 18px;
-  font-weight: 900;
-  font-family: 'Outfit', sans-serif;
-  pointer-events: none;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 300ms;
-  transition-property: transform;
-  transform: translateY(0px);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Tanker-Regular',sans-serif;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 300ms;
+    transition-property: transform;
+    transform: translateY(0px);
 }
 
 .customCheckBox:hover .inner {

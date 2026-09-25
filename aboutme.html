@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Phomasone</title>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="d459ac0b-8b26-449f-b033-b736650e3a74"></script>
+    <meta name="description" content="Portfolio de Kevin Phomasone, étudiant en BUT Informatique à l'IUT de Nantes. Découvrez mes compétences et projets en développement web et logiciel.">
+    <link rel="stylesheet" href="assets/font/ClashDisplay/css/clash-display.css">
+    <link rel="stylesheet" href="assets/font/Tanker/css/tanker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="index.css" rel="stylesheet">
+    <link href="aboutme.css" rel="stylesheet">
+    <script src="dictionnary.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="progress"></div>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="logo">Pk<span>.</span></a>
+            </div>
+            <div class="right-wrap">
+
+                <div class="nav-right">
+                    <a href="index.html">Home</a>
+                    <a data-i18n="project" href="index.html#projets">Projets</a>
+                    <a data-i18n="education" href="index.html#formation">Formation</a>
+                    <a data-i18n="about" href="aboutme.html">À propos</a>
+                    <a data-i18n="contact" href="aboutme.html#contact" class="btn-contact">Contact</a>
+
+                </div>
+
+                <div class="langWrap">
+                    <input type="radio" name="lang" value="fr" id="lang-fr" checked>
+                    <label for="lang-fr">FR</label>
+
+                    <input type="radio" name="lang" value="en" id="lang-en">
+                    <label for="lang-en">EN</label>
+
+                    <input type="radio" name="lang" value="vi" id="lang-vi">
+                    <label for="lang-vi">VI</label>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu de navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Menu Mobile-->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a data-i18n="project" href="index.html#projets">Projets</a>
+            <a data-i18n="education" href="index.html#formation">Formation</a>
+            <a data-i18n="about" href="aboutme.html">À propos</a>
+            <a data-i18n="contact" href="aboutme.html#contact" class="btn-contact-mob">Contact</a>
+        </div>
+            
+    </header>
+    <main>    
+        <div class="container" id="container">
+        <section class="block about reveal" >
+            <h1 data-i18n-html="about-hero-title" class="about-hero-title">À propos de <em>Moi</em></h1>
+            <p data-i18n-html="about-hero-desc" class="about-hero-desc">Bonjour, je m'appelle Phomasone Doan Kevin.<br><br>
+                Je suis né le 13/08/2007 à Ho-Chi-Minh-Ville, au Vietnam. J'ai grandi là-bas et j'ai fait 
+                toute ma scolarité au lycée français international Marguerite Duras. En 2022, j'ai déménagé 
+                en France pour continuer mes études , j'y ai fait mon lycée puis mes études supérieures.<br><br>
+                C'est en Première, grâce à la spécialité NSI, que j'ai commencé à coder. Je n'avais jamais 
+                touché à ça avant, donc les débuts n'ont pas été évidents. J'ai persévéré, et au Bac j'ai fini 
+                avec 20/20 en maths et 18/20.J'en étais vraiment fier.<br><br>
+                Après le Bac, j'ai voulu continuer sur cette voie et j'ai intégré un BUT Informatique à IUT de Nantes . Cette 
+                formation m'a permis d'aller plus loin dans le développement logiciel et d'apprendre à gérer de 
+                vrais projets techniques, en équipe comme en solo. Après ça, j'aimerais intégrer une école 
+                d'ingénieur et devenir ingénieur logiciel, ingénieur IA, ou encore ingénieur machine learning,
+                je suis encore en train d'affiner ce choix.
+            </p>
+        </section>
+        
+        <section class="block contact reveal" id="contact">
+            <div class="contact-wrap">
+
+                <!-- HERO -->
+                <div class="contact-hero">
+                    <h1 data-i18n-html="contact-title" class="contact-title">Me <span>Contacter</span></h1>
+                </div>
+
+                <!-- GRILLE PRINCIPALE -->
+                <div class="contact-grid">
+                    <form action="https://formspree.io/f/meewqwpe" method="post">
+                        <!-- FORMULAIRE -->
+                        <div class="contact-form-card">
+
+                            <div class="form-group">
+                                <label data-i18n="form-labelNom" for="name" class="form-label">Nom</label>
+                                <input id="name" name="name" type="text" class="form-input" placeholder="Phomasone">
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="form-labelMail" for="email" class="form-label">Adresse email</label>
+                                <input  id="email" name="email" type="email" class="form-input" placeholder="phomasone.kevin@gmail.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="form-labelMessage" for="message" class="form-label">Message</label>
+                                <textarea data-i18n-placeholder="contact-message-placeholder" id="message" name="message" class="form-textarea" placeholder="Votre message ici..."></textarea>
+                            </div>
+
+                            <input type="text" name="_gotcha" style="display:none">
+
+                            <button data-i18n="send_message" type="submit" class="form-submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+        
+    </header>
+    
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="https://www.facebook.com/profile.php?id=100073947349521&sk=directory_intro" class="social-btn" aria-label="Profil Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/im._.kebin/" class="social-btn" aria-label="Profil Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/phomasone-kevin-537251385/" class="social-btn" aria-label="Profil LinkedIn ">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/im-midnight" class="social-btn" aria-label="Profil GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a data-i18n="contact" href="#contact" >Contact</a></li>
+                </ul>
+            </div>
+
+            <div data-i18n="row" class="row">
+                © 2026 Phomasone Doan Kevin - All rights reserved
+            </div>
+        </div>
+        
+    </footer>
+</body>
+    <script>
+        // Menu hamburger
+        const menuHamburger = document.querySelector(".hamburger")
+        const navLinks = document.querySelector(".mobile-menu")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('open') // Rajout la classe mobile menu au variable navLinks
+        })
+        // Ferme le menu dès qu'on clique sur un lien à l'intérieur
+        const navLinksMobile = document.querySelectorAll('.mobile-menu a')
+        navLinksMobile.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open')
+            })
+        })
+    </script>
+    
+
+</html>
