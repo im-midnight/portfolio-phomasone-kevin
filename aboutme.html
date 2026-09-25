@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <script src="js/toggle-init.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Phomasone</title>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="d459ac0b-8b26-449f-b033-b736650e3a74"></script>
@@ -11,8 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="index.css" rel="stylesheet">
     <link href="aboutme.css" rel="stylesheet">
-    <script src="dictionnary.js" defer></script>
-    <script src="index.js" defer></script>
+    <script src="js/dictionnary.js" defer></script>
+    <script src="js/translation.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
 </head>
 <body>
     <div id="progress"></div>
@@ -45,6 +48,13 @@
 
                     <span></span>
                 </div>
+
+                <label class="theme-toggle" for="theme-toggle-input" aria-label="Changer le thème">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </label>
             </div>
 
             <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu de navigation">
@@ -159,6 +169,20 @@
     </footer>
 </body>
     <script>
+        // Toggle thème sombre/clair
+        const themeToggle = document.getElementById('theme-toggle-input')
+        if (localStorage.getItem('theme') === 'dark') {
+            themeToggle.checked = true
+        }
+        themeToggle.addEventListener('change', () => {
+            if (themeToggle.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                localStorage.setItem('theme', 'dark')
+            } else {
+                document.documentElement.removeAttribute('data-theme')
+                localStorage.setItem('theme', 'light')
+            }
+        })
         // Menu hamburger
         const menuHamburger = document.querySelector(".hamburger")
         const navLinks = document.querySelector(".mobile-menu")

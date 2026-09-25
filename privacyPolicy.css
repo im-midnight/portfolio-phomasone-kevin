@@ -41,10 +41,8 @@ nav {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background-color: rgba(255, 255, 254, 0.55);
+    justify-content: space-between;
     backdrop-filter: blur(16px) saturate(180%);
-    border-bottom: 1px solid rgba(186, 232, 232, 0.5);
 }
 
 
@@ -251,4 +249,19 @@ footer {
     .policy-example {
         padding: 1.1rem 1.2rem;
     }
+}
+
+[data-theme="dark"] {
+    --bg:        #1c1a2e; /* variante assombrie de --headline (#272343) */
+    --headline:  #fffffe; /* devient le --bg clair d'origine */
+    --paragraph: #b6b4cf; /* --paragraph éclairci pour rester lisible sur fond sombre */
+    --accent:    #1d0f54; /* inchangé : reste le point chaud, comme la lumière aux fenêtres */
+    --secondary: #322f4d; /* --secondary assombri, garde la même teinte violette */
+    --tertiary:  #251D56; /* --tertiary assombri, sert de bordures/contours */
+}
+
+/* le footer utilise --headline comme fond en light mode ;
+   en dark mode --headline devient blanc, donc on force un fond sombre ici */
+[data-theme="dark"] .footer {
+    background-color: var(--bg);
 }

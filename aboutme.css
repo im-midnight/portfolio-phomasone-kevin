@@ -66,13 +66,13 @@
     font-size: clamp(3rem, 8vw, 7rem);
     font-weight: 700;
     line-height: 0.95;
-    color: var(--bg);
+    color: #fffffe;
     max-width: 900px;
 }
 
 .about-hero-title em {
     font-style: normal;
-    color: var(--accent);
+    color: #ffd803;
 }
 
 .about-hero-desc {
@@ -80,7 +80,7 @@
     font-size: clamp(18px, 1.8vw, 22px);
     font-weight: 500;
     line-height: 1.65;
-    color: var(--bg);
+    color: #fffffe;
     margin-top: 10px;
     max-width: 680px;
 }

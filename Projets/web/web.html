@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Phomasone — Web</title>
+    <script src="../../js/toggle-init.js"></script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="d459ac0b-8b26-449f-b033-b736650e3a74"></script>
     <meta name="description" content="Portfolio de Kevin Phomasone, étudiant en BUT Informatique à l'IUT de Nantes. Découvrez mes compétences et projets en développement web et logiciel.">
     <link rel="stylesheet" href="../assets/font/ClashDisplay/css/clash-display.css">
@@ -12,8 +13,10 @@
     <link rel="stylesheet" href="../../assets/font/Tanker/css/tanker.css">
     <link href="../../index.css" rel="stylesheet">
     <link href="web.css" rel="stylesheet">
-    <script src="../../dictionnary.js" defer></script>
-    <script src="../../index.js" defer></script>
+    <script src="../../js/dictionnary.js" defer></script>
+    <script src="../../js/translation.js" defer></script>
+    <script src="../../js/toggle-theme.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -45,6 +48,13 @@
 
                     <span></span>
                 </div>
+
+                <label class="theme-toggle" for="theme-toggle-input" aria-label="Changer le thème">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </label>
             </div>
 
             <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu de navigation">
@@ -205,6 +215,21 @@
 
 </body>
     <script>
+        // Toggle thème sombre/clair
+        const themeToggle = document.getElementById('theme-toggle-input')
+        if (localStorage.getItem('theme') === 'dark') {
+            themeToggle.checked = true
+        }
+        themeToggle.addEventListener('change', () => {
+            if (themeToggle.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                localStorage.setItem('theme', 'dark')
+            } else {
+                document.documentElement.removeAttribute('data-theme')
+                localStorage.setItem('theme', 'light')
+            }
+        })
+
         const menuHamburger = document.querySelector(".hamburger")
         const navLinks = document.querySelector(".mobile-menu")
  

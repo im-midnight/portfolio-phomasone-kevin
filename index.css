@@ -37,7 +37,6 @@ body {
     border-radius: 100px;
     position: relative;
     background-color: var(--secondary);
-    border: 1px solid rgba(186, 232, 232, 0.5);
     margin-left: 8px;
 }
 
@@ -164,9 +163,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 254, 0.55);
     backdrop-filter: blur(16px) saturate(180%);
-    border-bottom: 1px solid rgba(186, 232, 232, 0.5);
 }
 
 /* Logo / initiales à gauche */
@@ -269,7 +266,7 @@ nav {
 }
 .cta-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(249, 212, 0, 0.572);
+    box-shadow: 0 6px 20px var(--accent);
 }
 
 .cta-secondary {
@@ -315,6 +312,16 @@ nav {
     box-shadow: 0 20px 60px rgba(39, 35, 67, 0.15);
 }
 
+.image-wrapper .icon-dark {
+    display: none;
+}
+
+[data-theme="dark"] .image-wrapper .icon-light {
+    display: none;
+}
+[data-theme="dark"] .image-wrapper .icon-dark {
+    display: block;
+}
 /* Hamburger */
 .hamburger {
     display: none;
@@ -547,6 +554,10 @@ nav {
     opacity: 0.35;
     font-size: 0.9rem;
     transition: transform 0.25s ease, opacity 0.25s ease, color 0.25s ease;
+    width: 20px;
+    height: 20px;
+    font-weight: 300;
+
 }
 
 .teaser-item:hover .teaser-item-icon {
@@ -566,7 +577,7 @@ nav {
     letter-spacing: 2px;
     padding: 12px 28px;
     background-color: var(--headline);
-    color: var(--accent);
+    color: var(--bg);
     border-color: var(--headline);
     border-radius: 8px;
     text-decoration: none;
@@ -597,7 +608,7 @@ nav {
 .formation{
     display: flex;
     flex-direction: column;
-    background-color: #ffd803;
+    background-color: var(--accent);
 }
 
 /* ── Formation — même format liste que les projets ── */
@@ -616,7 +627,7 @@ nav {
     font-weight: 600;
     letter-spacing: 0.5px;
     color: var(--headline);
-    opacity: 0.6;
+    opacity: 0.9;
     white-space: nowrap;
 }
 
@@ -639,7 +650,7 @@ nav {
 .formation-item-place {
     font-family: 'Outfit', sans-serif;
     font-size: 0.88rem;
-    color: var(--paragraph);    
+    color: var(--headline);    
     align-self: end;
 }
 
@@ -647,7 +658,7 @@ nav {
     font-family: 'Outfit', sans-serif;
     font-size: 0.85rem;
     line-height: 1.7;
-    color: var(--paragraph);
+    color: var(--headline);
     opacity: 0.85;
     max-width: 600px;
     align-self: end;
@@ -667,7 +678,7 @@ nav {
     font-size: 0.8rem;
     font-weight: 600;
     background: var(--bg);
-    color: var(--paragraph);
+    color: var(--headline);
     padding: 3px 10px;
     border-radius: 6px;
 }
@@ -704,11 +715,16 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
+.iconSvg{
+    width: 25px;
+    height: 25px;
+}
 .xp-section-title {
     font-family: 'Tanker-Regular',sans-serif;
     letter-spacing: .02em;
     font-size: clamp(3rem, 5vw, 6rem);
-    color: var(--paragraph);
+    color: var(--headline);
     text-transform: uppercase;
     margin-bottom: 5rem;
     display: flex;
@@ -741,7 +757,7 @@ nav {
 .xp-skill-card-title {
     font-family: 'DM Mono', monospace;
     font-size: 0.75rem;
-    color: var(--paragraph);
+    color: var(--headline);
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 0.9rem;
@@ -759,7 +775,7 @@ nav {
     gap: 0.75rem;
 }
 
-.xp-skill-item img {
+.xp-skill-item svg {
     width: 30px;
     height: 30px;
     object-fit: contain;
@@ -769,12 +785,12 @@ nav {
 .xp-skill-item span {
     font-family: 'DM Mono', monospace;
     font-size: 0.85rem;
-    color: var(--paragraph);
+    color: var(--headline);
     letter-spacing: 0.3px;
     transition: color 0.2s ease, opacity 0.2s ease;
 }
 
-.xp-skill-item:hover img {
+.xp-skill-item:hover svg {
     transform: translateX(5px);
 }
 .xp-skill-item:hover span {
@@ -827,7 +843,6 @@ nav {
 }
 
 .footer .row a:hover{
-    color: #272343;
     transform: translateY(-5px);
 }
 
@@ -848,7 +863,7 @@ nav {
     font-family: 'Tanker-Regular',sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
-    color: rgb(62, 62, 62);
+    color: var(--headline);
     background-color: var(--bg);
     border-radius: 100px;
     padding: 8px 18px;
@@ -952,4 +967,60 @@ nav {
     .hero-cta { gap: 8px; }
     .cta-primary, .cta-secondary { padding: 10px 20px; }
     .timeline-card { padding: 1.25rem; }
+}
+
+
+/* ── Dark mode : dérivé de la palette Happy Hues (pas de nouvelles teintes) ── */
+[data-theme="dark"] {
+    --bg:        #1c1a2e; /* variante assombrie de --headline (#272343) */
+    --headline:  #fffffe; /* devient le --bg clair d'origine */
+    --paragraph: #b6b4cf; /* --paragraph éclairci pour rester lisible sur fond sombre */
+    --accent:    #1d0f54; /* inchangé : reste le point chaud, comme la lumière aux fenêtres */
+    --secondary: #322f4d; /* --secondary assombri, garde la même teinte violette */
+    --tertiary:  #251D56; /* --tertiary assombri, sert de bordures/contours */
+}
+
+/* le footer utilise --headline comme fond en light mode ;
+   en dark mode --headline devient blanc, donc on force un fond sombre ici */
+[data-theme="dark"] .footer {
+    background-color: var(--bg);
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Toggle thème (même logique visuelle que .langWrap) ── */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.theme-toggle input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.theme-toggle-track {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    border-radius: 100px;
+    background-color: var(--secondary);
+    transition: background-color 0.3s ease;
+}
+.theme-toggle-thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--bg);
+    box-shadow: 0 2px 6px rgba(39, 35, 67, 0.25);
+    transition: left 0.3s ease;
+}
+.theme-toggle input:checked ~ .theme-toggle-track .theme-toggle-thumb {
+    left: 22px;
 }
