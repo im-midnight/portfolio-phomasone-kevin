@@ -12,6 +12,6 @@
     link.rel = 'preload';
     link.as = 'image';
     link.type = 'image/webp';
-    link.href = isDark ? 'assets/icon-dark.webp' : 'assets/icon.webp';
+    link.href = isDark ? '/assets/icon-dark.webp' : '/assets/icon.webp';
     document.head.appendChild(link);
 })();
