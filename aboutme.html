@@ -16,6 +16,7 @@
     <script src="js/dictionnary.js" defer></script>
     <script src="js/translation.js" defer></script>
     <script src="js/toggle-theme.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
 </head>
 <body>
     <div id="progress"></div>
@@ -58,7 +59,22 @@
                 </div>
                 
             </div>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu de navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
+
+        <!-- Menu Mobile-->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/">Home</a>
+            <a data-i18n="project" href="index.html#projets">Projets</a>
+            <a data-i18n="education" href="index.html#formation">Formation</a>
+            <a data-i18n="about" href="aboutme.html">À propos</a>
+            <a data-i18n="contact" href="aboutme.html#contact" class="btn-contact-mob">Contact</a>
+        </div>
             
     </header>
     <main>    
