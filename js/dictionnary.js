@@ -363,6 +363,7 @@ var files = {
 // inside data.fr / data.en / data.vi in dictionnary.js
 data.fr.email = {
     fillAll: "Merci de remplir tous les champs.",
+    invalidEmail: "Adresse email invalide.",
     sending: "Envoi en cours...",
     success: "Message envoyé !",
     error: "Une erreur est survenue, réessayez plus tard.",
@@ -370,6 +371,7 @@ data.fr.email = {
 };
 data.en.email = {
     fillAll: "Please fill in all fields.",
+    invalidEmail: "Invalid email address.",
     sending: "Sending...",
     success: "Message sent!",
     error: "Something went wrong, please try again later.",
@@ -377,6 +379,7 @@ data.en.email = {
 };
 data.vi.email = {
     fillAll: "Vui lòng điền đầy đủ.",
+    invalidEmail: "Địa chỉ email không hợp lệ.",
     sending: "Đang gửi...",
     success: "Đã gửi tin nhắn!",
     error: "Đã xảy ra lỗi, xin vui lòng thử lại sau.",

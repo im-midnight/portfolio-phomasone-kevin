@@ -11,6 +11,12 @@ function showToast(message, type = "success") {
     }, 3500);
 }
 
+function isValidEmail(email) {
+    // Vérifie format basique : texte@texte.texte
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
 function sendEmail() {
     const lang = localStorage.getItem('lang') || 'fr';
     const t = (data[lang] && data[lang].email) ? data[lang].email : data.fr.email;
@@ -28,6 +34,13 @@ function sendEmail() {
 
     if (!params.name || !params.email || !params.message) {
         showToast(t.fillAll, "error");
+        return;
+    }
+
+    // Nouvelle vérification
+    if (!isValidEmail(params.email)) {
+        showToast(t.invalidEmail, "error");
+        document.getElementById("email").focus();
         return;
     }
 
