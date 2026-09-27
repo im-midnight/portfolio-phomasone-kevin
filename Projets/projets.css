@@ -10,7 +10,7 @@
 .projects-hero h1 {
     align-self: center;
     font-family: 'Tanker-Regular',sans-serif;
-    font-size: clamp(3rem, 8vw, 7rem);
+    font-size: clamp(5rem, 8vw, 7rem);
     font-weight: 900;
     color: var(--headline);
     margin: 0 0 1.5rem;
