@@ -225,3 +225,44 @@
     color: var(--headline);
     transform: translateY(-5px);
 }
+
+.toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #272343;
+    color: #fffffe;
+    box-shadow: 0 12px 30px rgba(39, 35, 67, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.toast.success {
+    border-left: 4px solid #ffd803;
+}
+
+.toast.error {
+    border-left: 4px solid #fc8888;
+}
+
+.toast i {
+    font-size: 16px;
+}
+.toast.success i { color: #ffd803; }
+.toast.error i { color: #fc8888; }

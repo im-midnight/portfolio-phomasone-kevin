@@ -1,38 +1,53 @@
+function showToast(message, type = "success") {
+    const toast = document.getElementById("toast");
+    const icon = type === "success" ? "fa-circle-check" : "fa-circle-exclamation";
+
+    toast.innerHTML = `<i class="fas ${icon}"></i> ${message}`;
+    toast.className = `toast show ${type}`;
+
+    clearTimeout(toast._hideTimeout);
+    toast._hideTimeout = setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3500);
+}
+
 function sendEmail() {
     const lang = localStorage.getItem('lang') || 'fr';
     const t = (data[lang] && data[lang].email) ? data[lang].email : data.fr.email;
-
     const btn = document.querySelector(".form-submit");
     const gotcha = document.querySelector('[name="_gotcha"]').value;
 
-    if (gotcha) return; // honeypot: bot filled hidden field, bail silently
+    if (gotcha) return;
 
     const params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
-        lang_header: t.emailHeader, // translated label, shown inside the email template
+        lang_header: t.emailHeader,
     };
 
     if (!params.name || !params.email || !params.message) {
-        alert(t.fillAll);
+        showToast(t.fillAll, "error");
         return;
     }
 
     btn.disabled = true;
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${t.sending}`;
 
     emailjs.send("service_ygqcimn", "template_itfx5pv", params)
         .then(() => {
-            alert(t.success);
+            showToast(t.success, "success");
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("message").value = "";
         })
         .catch((error) => {
             console.error("EmailJS error:", error);
-            alert(t.error);
+            showToast(t.error, "error");
         })
         .finally(() => {
             btn.disabled = false;
+            btn.innerHTML = originalHTML;
         });
 }
