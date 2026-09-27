@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="assets/font/Tanker/fonts/Tanker-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <title>Kevin Phomasone</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "9YPFHzAXH-Lv4h79u",
+            });
+        })();
+    </script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="d459ac0b-8b26-449f-b033-b736650e3a74"></script>
     <meta name="description" content="Portfolio de Kevin Phomasone, étudiant en BUT Informatique à l'IUT de Nantes. Découvrez mes compétences et projets en développement web et logiciel.">
     <link rel="stylesheet" href="assets/font/ClashDisplay/css/clash-display.css">
@@ -16,6 +26,7 @@
     <script src="js/dictionnary.js" defer></script>
     <script src="js/translation.js" defer></script>
     <script src="js/toggle-theme.js" defer></script>
+    <script src="js/email.js" defer></script>
     <script src="js/mobile-menu.js" defer></script>
 </head>
 <body>
@@ -106,34 +117,32 @@
 
                 <!-- GRILLE PRINCIPALE -->
                 <div class="contact-grid">
-                    <form action="https://formspree.io/f/meewqwpe" method="post">
-                        <!-- FORMULAIRE -->
-                        <div class="contact-form-card">
+            
+                    <!-- FORMULAIRE -->
+                    <div class="contact-form-card">
 
-                            <div class="form-group">
-                                <label data-i18n="form-labelNom" for="name" class="form-label">Nom</label>
-                                <input id="name" name="name" type="text" class="form-input" placeholder="Phomasone">
-                            </div>
-
-                            <div class="form-group">
-                                <label data-i18n="form-labelMail" for="email" class="form-label">Adresse email</label>
-                                <input  id="email" name="email" type="email" class="form-input" placeholder="phomasone.kevin@gmail.com">
-                            </div>
-
-                            <div class="form-group">
-                                <label data-i18n="form-labelMessage" for="message" class="form-label">Message</label>
-                                <textarea data-i18n-placeholder="contact-message-placeholder" id="message" name="message" class="form-textarea" placeholder="Votre message ici..."></textarea>
-                            </div>
-
-                            <input type="text" name="_gotcha" style="display:none">
-
-                            <button data-i18n="send_message" type="submit" class="form-submit">
-                                <i class="fas fa-paper-plane"></i>
-                                Envoyer le message
-                            </button>
+                        <div class="form-group">
+                            <label data-i18n="form-labelNom" for="name" class="form-label">Nom</label>
+                            <input id="name" name="name" type="text" class="form-input" placeholder="Phomasone">
                         </div>
-                    </form>
 
+                        <div class="form-group">
+                            <label data-i18n="form-labelMail" for="email" class="form-label">Adresse email</label>
+                            <input  id="email" name="email" type="email" class="form-input" placeholder="phomasone.kevin@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label data-i18n="form-labelMessage" for="message" class="form-label">Message</label>
+                            <textarea data-i18n-placeholder="contact-message-placeholder" id="message" name="message" class="form-textarea" placeholder="Votre message ici..."></textarea>
+                        </div>
+
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <button data-i18n="send_message" type="submit" class="form-submit" onclick="sendEmail()">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </div>
                 </div>
 
             </div>

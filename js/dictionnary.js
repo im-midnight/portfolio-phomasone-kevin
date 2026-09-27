@@ -359,3 +359,26 @@ var files = {
         "cv": "assets/cv-eng.pdf"
     }
 }
+
+// inside data.fr / data.en / data.vi in dictionnary.js
+data.fr.email = {
+    fillAll: "Merci de remplir tous les champs.",
+    sending: "Envoi en cours...",
+    success: "Message envoyé !",
+    error: "Une erreur est survenue, réessayez plus tard.",
+    emailHeader: "Nouveau message"
+};
+data.en.email = {
+    fillAll: "Please fill in all fields.",
+    sending: "Sending...",
+    success: "Message sent!",
+    error: "Something went wrong, please try again later.",
+    emailHeader: "New message"
+};
+data.vi.email = {
+    fillAll: "Vui lòng điền đầy đủ.",
+    sending: "Đang gửi...",
+    success: "Đã gửi tin nhắn!",
+    error: "Đã xảy ra lỗi, xin vui lòng thử lại sau.",
+    emailHeader: "Tin nhắn mới"
+};
