@@ -69,7 +69,7 @@ var data = {
         "mini-card-name3" :"Calculatrice",
         "mini-card-desc3" : "Calculatrice simple avec les opérations de base : addition, soustraction, multiplication, division.",
         "mini-card-name4" :"Convertisseur de Température",
-        "card-desc4" : "Conversion des températures entre Celsius, Fahrenheit et Kelvin en temps réel.",
+        "mini-card-desc4" : "Conversion des températures entre Celsius, Fahrenheit et Kelvin en temps réel.",
         "hero-titleFlip7" : "Jeu de Cartes<br><span>Flip7</span>",
         "hero-descFlip7" : "Un jeu de cartes Flip7 développée en Kotlin avec JavaFX. Architecture MVC stricte, système de scoreboard avec historique des manches, visualisation des scores en graphique, affichage du podium en fin de partie.",
         "hero-titleReseaux" : "<span>Analyse de</span><br>Réseau Social",
