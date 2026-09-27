@@ -762,8 +762,8 @@ nav {
 }
 
 .xp-skill-card-title {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
+    font-family: 'Tanker-Regular',sans-serif;
+    font-size: 0.9rem;
     color: var(--headline);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -790,8 +790,9 @@ nav {
 }
 
 .xp-skill-item span {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Tanker-Regular',sans-serif;
     font-size: 0.85rem;
+    opacity: 0.9;
     color: var(--headline);
     letter-spacing: 0.3px;
     transition: color 0.2s ease, opacity 0.2s ease;
