@@ -223,6 +223,5 @@
 .form-submit:hover {
     background: var(--accent);
     color: var(--headline);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 216, 3, 0.35);
+    transform: translateY(-5px);
 }
