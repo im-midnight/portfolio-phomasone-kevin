@@ -545,8 +545,7 @@ nav {
 .teaser-item-desc {
     font-family: 'Outfit', sans-serif;
     font-size: 0.95rem;
-    color: var(--paragraph);
-    opacity: 0.8;
+    color: var(--headline);
     line-height: 1.6;
     margin-top: 0.7rem;
     max-width: 600px;
