@@ -87,15 +87,15 @@
     letter-spacing: 1px;
 }
 
-.card-desc {
+card-desc {
     font-family: 'Outfit', sans-serif;
     font-size: 0.95rem;
-    color: var(--paragraph);
+    color: var(--headline);
     line-height: 1.65;
     margin: 0 0 1.5rem;
     font-weight: 300;
-    opacity: 0.75;
-}
+    opacity: 0.9;
+    }
 
 .card-header{
     display: flex;  
