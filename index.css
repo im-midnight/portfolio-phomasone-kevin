@@ -680,13 +680,13 @@ nav {
 }
 
 .tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.8rem;
-    font-weight: 600;
-    background: var(--bg);
-    color: var(--headline);
-    padding: 3px 10px;
-    border-radius: 6px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--headline);
+  color: var(--bg);
+  padding: 3px 10px;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 560px) {
