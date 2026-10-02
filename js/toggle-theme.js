@@ -1,6 +1,5 @@
 const themeToggle = document.getElementById('theme-toggle-input')
 const systemDark = window.matchMedia('(prefers-color-scheme: dark)')
-const stored = localStorage.getItem('theme')
 
 function applyTheme(dark) {
     if (dark) {
@@ -11,15 +10,15 @@ function applyTheme(dark) {
     themeToggle.checked = dark
 }
 
-// Application initiale (ce qui manquait)
-applyTheme(stored ? stored === 'dark' : systemDark.matches)
+// Au chargement : on suit l'OS
+applyTheme(systemDark.matches)
 
+// Le toggle change le thème pour la visite en cours
 themeToggle.addEventListener('change', () => {
     applyTheme(themeToggle.checked)
-    localStorage.setItem('theme', themeToggle.checked ? 'dark' : 'light')
 })
 
+// Quand l'OS change, on le suit, même après un clic sur le toggle
 systemDark.addEventListener('change', (e) => {
-    if (localStorage.getItem('theme')) return
     applyTheme(e.matches)
 })
