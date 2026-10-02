@@ -13,10 +13,41 @@
     <link href="privacyPolicy.css" rel="stylesheet">
     <script src="js/dictionnary.js" defer></script>
     <script src="js/translation.js" defer></script>
+    <script src="js/toggle-theme.js" defer></script>
+
 </head>
 <body>
-
     <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="/" class="logo">Pk<span>.</span></a>
+            </div>
+            <div class="right-wrap">
+
+                <div class="utility-wrap">
+                    <div class="langWrap">
+                        <input type="radio" name="lang" value="fr" id="lang-fr" checked>
+                        <label for="lang-fr">FR</label>
+
+                        <input type="radio" name="lang" value="en" id="lang-en">
+                        <label for="lang-en">EN</label>
+
+                        <input type="radio" name="lang" value="vi" id="lang-vi">
+                        <label for="lang-vi">VI</label>
+
+                        <span></span>
+                    </div>
+                    <label class="theme-toggle" for="theme-toggle-input" aria-label="Changer le thème">
+                        <input type="checkbox" id="theme-toggle-input">
+                        <span class="theme-toggle-track">
+                            <span class="theme-toggle-thumb"></span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+            
     </header>
 
     <main>

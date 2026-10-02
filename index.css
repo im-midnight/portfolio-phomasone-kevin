@@ -95,7 +95,8 @@ body {
 #lang-toggle:hover {
     background-color: var(--paragraph, #ffffff);
     color: var(--bg, #000000);
-}   
+} 
+  
 #progress {
     z-index: 9999;
     position: fixed;
