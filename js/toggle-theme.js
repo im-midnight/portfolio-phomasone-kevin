@@ -10,15 +10,18 @@ function applyTheme(dark) {
     themeToggle.checked = dark
 }
 
-// Au chargement : on suit l'OS
-applyTheme(systemDark.matches)
+// Au chargement : choix fait pendant la visite, sinon on suit l'OS
+const stored = sessionStorage.getItem('theme')
+applyTheme(stored ? stored === 'dark' : systemDark.matches)
 
-// Le toggle change le thème pour la visite en cours
+// Le toggle change le thème pour la visite en cours (d'une page à l'autre)
 themeToggle.addEventListener('change', () => {
     applyTheme(themeToggle.checked)
+    sessionStorage.setItem('theme', themeToggle.checked ? 'dark' : 'light')
 })
 
-// Quand l'OS change, on le suit, même après un clic sur le toggle
+// Quand l'OS change, on le suit et on efface le choix du toggle
 systemDark.addEventListener('change', (e) => {
+    sessionStorage.removeItem('theme')
     applyTheme(e.matches)
 })
