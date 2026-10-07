@@ -313,16 +313,6 @@ nav {
     box-shadow: 0 20px 60px rgba(39, 35, 67, 0.15);
 }
 
-.image-wrapper .icon-dark {
-    display: none;
-}
-
-[data-theme="dark"] .image-wrapper .icon-light {
-    display: none;
-}
-[data-theme="dark"] .image-wrapper .icon-dark {
-    display: block;
-}
 /* Hamburger */
 .hamburger {
     display: none;
@@ -994,9 +984,23 @@ nav {
 /* le footer utilise --headline comme fond en light mode ;
    en dark mode --headline devient blanc, donc on force un fond sombre ici */
 [data-theme="dark"] .footer {
+    background-position: bottom ;
+    background-image: url('assets/background-footer-dark.webp');
+}
+.image-wrapper .icon-dark {
+    display: none;
+}
+
+[data-theme="dark"] .footer {
     background-color: var(--bg);
 }
 
+[data-theme="dark"] .image-wrapper .icon-light {
+    display: none;
+}
+[data-theme="dark"] .image-wrapper .icon-dark {
+    display: block;
+}
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
