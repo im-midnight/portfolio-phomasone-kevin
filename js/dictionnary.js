@@ -260,7 +260,7 @@ var data = {
             Mình sinh ngày 13/08/2007 tại Thành phố Hồ Chí Minh, Việt Nam. Mình lớn lên ở đó và đã theo học
             toàn bộ quãng thời gian học tập tại Trường Trung học Quốc tế Pháp Marguerite Duras. Năm 2022, mình chuyển đến
             Pháp để tiếp tục việc học, tại đó mình đã học trung học phổ thông rồi đại học.<br><br>
-            Khi học lớp 11, nhờ chuyên ngành Công nghệ số và Khoa học Máy tính, ình bắt đầu học lập trình. Trước đó mình chưa bao giờ
+            Khi học lớp 11, nhờ chuyên ngành Công nghệ số và Khoa học Máy tính, mình bắt đầu học lập trình. Trước đó mình chưa bao giờ
             tiếp xúc với lĩnh vực này, nên những bước đầu không hề dễ dàng. Mình đã kiên trì, và khi thi tốt nghiệp, mình đã đạt
             20/20 môn Toán và 18/20 môn Khoa học Máy tính. Mình thực sự rất tự hào về điều đó.<br><br>
             Sau khi tốt nghiệp, mình muốn tiếp tục theo đuổi con đường này và đã nhập học chương trình Cử nhân Công nghệ Thông tin tại IUT Nantes. Chương trình
