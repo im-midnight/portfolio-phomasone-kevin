@@ -260,3 +260,8 @@
 }
 .toast.success i { color: #ffd803; }
 .toast.error i { color: #fc8888; }
+
+[data-theme="dark"] .about {
+    background-image: url(assets/bg-totoro-dark.png);
+}
+    
