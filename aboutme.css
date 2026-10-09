@@ -16,6 +16,7 @@
 }
 
 @media screen and (max-width: 1300px) {
+
     .about {
         background-color: #272343;
         background-size: 110vw auto;
@@ -262,6 +263,7 @@
 .toast.error i { color: #fc8888; }
 
 [data-theme="dark"] .about {
+    background-color: #16161a;
     background-image: url(assets/bg-totoro-dark.png);
 }
     
