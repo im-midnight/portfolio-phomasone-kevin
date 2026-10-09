@@ -556,7 +556,7 @@ nav {
 
 .teaser-item:hover .teaser-item-icon {
     opacity: 1;
-    color: var(--accent);
+    color: #ffd803;
     transform: translate(4px, -4px);
 }
 
