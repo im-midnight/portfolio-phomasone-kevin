@@ -147,7 +147,7 @@ section{
     gap: 8px;
     align-items: center;
     padding: 1rem var(--gutter) 4rem;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 70px);
 }
 header {
     position: sticky;
