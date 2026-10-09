@@ -9,17 +9,10 @@
     }
 
     var link = document.createElement('link');
-    link.rel = 'preload';
-    link.as = 'image';
-    link.type = 'image/webp';
-    link.href = isDark ? '/assets/icon-dark.webp' : '/assets/icon.webp';
-
-    var faviconlink = document.createElement('link');
     link.rel = 'icon';
     link.type = 'image/webp';
     link.href = isDark ? '/assets/icon-dark.webp' : '/assets/icon.webp';
 
     document.head.appendChild(link);
-    document.head.appendChild(faviconlink);
 })();
 

@@ -8,17 +8,16 @@
     <link rel="preconnect" href="https://api.emailjs.com">
     <link rel="dns-prefetch" href="https://api.emailjs.com">
     <title>Kevin Phomasone</title>
-    <script type="text/javascript"
+    <script type="text/javascript" defer
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function(){
+        document.addEventListener("DOMContentLoaded", function(){
             emailjs.init({
                 publicKey: "9YPFHzAXH-Lv4h79u",
             });
-        })();
+        });
     </script>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="d459ac0b-8b26-449f-b033-b736650e3a74"></script>
     <meta name="description" content="Portfolio de Kevin Phomasone, étudiant en BUT Informatique à l'IUT de Nantes. Découvrez mes compétences et projets en développement web et logiciel.">
     <link rel="stylesheet" href="assets/font/ClashDisplay/css/clash-display.css">
     <link rel="stylesheet" href="assets/font/Tanker/css/tanker.css">
@@ -30,6 +29,7 @@
     <script src="js/toggle-theme.js" defer></script>
     <script src="js/email.js" defer></script>
     <script src="js/mobile-menu.js" defer></script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="d459ac0b-8b26-449f-b033-b736650e3a74"></script>
 </head>
 <body>
     <div id="progress"></div>

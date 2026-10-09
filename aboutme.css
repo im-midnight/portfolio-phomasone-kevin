@@ -88,12 +88,6 @@
 }
 
 /* ── RESPONSIVE ── */
-@media screen and (max-width: 700px) {
-    .stat-card {
-        padding: 1.1rem 0.6rem;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .about {
         padding: 5rem 24px 3rem;

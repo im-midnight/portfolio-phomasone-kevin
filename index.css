@@ -29,6 +29,7 @@ body {
     background-color: var(--bg);
     color: var(--paragraph);
     font-family: 'Outfit', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .langWrap {
     display: inline-flex;
@@ -92,11 +93,6 @@ body {
     color: var(--headline);
 }
 
-#lang-toggle:hover {
-    background-color: var(--paragraph, #ffffff);
-    color: var(--bg, #000000);
-} 
-  
 #progress {
     z-index: 9999;
     position: fixed;
@@ -567,7 +563,6 @@ nav {
     display: inline-block;
     margin-top: 2.5rem;
     font-family: 'Tanker-Regular',sans-serif;
-    letter-spacing: .02em;
     font-size: 20px;
     font-weight: 100;
     text-transform: uppercase;
@@ -685,27 +680,6 @@ nav {
         grid-template-columns: 1fr;
         gap: 0.5rem;
     }
-}
-
-.social-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 8px 14px;
-    background: var(--bg);
-    border: 1.5px solid var(--tertiary);
-    border-radius: 100px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--headline);
-    text-decoration: none;
-    transition: all 0.2s;
-}
-.social-pill:hover {
-    background: var(--headline);
-    color: var(--accent);
-    border-color: var(--headline);
-    transform: translateY(-2px);
 }
 
 
@@ -853,6 +827,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
+    transition: color 0.2s, transform 0.2s;
 }
 
 .footer .row ul li{
@@ -868,10 +843,6 @@ nav {
     background-color: #fffffe;
     border-radius: 100px;
     padding: 8px 18px;
-}
-
-.footer .row ul {
-    transition: color 0.2s, transform 0.2s;
 }
 
 .footer .row ul :hover {
@@ -900,7 +871,6 @@ nav {
 
 /* ligne de copyright */
 .footer .row:last-child {
-  font-family: 'Outfit', sans-serif;
   font-size: 1.5rem;
   letter-spacing: 1px;
   color: #fffffe;
@@ -953,9 +923,6 @@ nav {
 @media (max-width: 600px) {
     .contact-wrap { padding: 3rem 1.2rem 5rem; }
     .contact-form-card { padding: 1.75rem 1.25rem; }
-    .timeline { padding-left: 2.95rem; }
-    .timeline-dot { left: -2.25rem; }
-    .timeline-header { flex-direction: column; gap: 0.4rem; }
 }
 
 /* petits téléphones : réduit encore la gouttière et les cartes du
@@ -967,7 +934,6 @@ nav {
     .name-introduction { gap: 1rem; }
     .hero-cta { gap: 8px; }
     .cta-primary, .cta-secondary { padding: 10px 20px; }
-    .timeline-card { padding: 1.25rem; }
 }
 
 
@@ -1000,9 +966,6 @@ nav {
 }
 [data-theme="dark"] .image-wrapper .icon-dark {
     display: block;
-}
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ── Toggle thème (même logique visuelle que .langWrap) ── */

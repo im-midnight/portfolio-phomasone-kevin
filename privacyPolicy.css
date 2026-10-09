@@ -89,15 +89,6 @@ nav {
         top: 17px;
         left: var(--gutter);
     }
-    .hamburger {
-        display: flex;
-    }
-    .home {
-        grid-template-columns: 1fr;
-        padding: 3rem 28px 2.5rem;
-        min-height: auto;
-        gap: 2.5rem;
-    }
 }
 
 /* ── Toggle thème (même logique visuelle que .langWrap) ── */
@@ -197,11 +188,6 @@ nav {
     color: var(--headline);
 }
 
-#lang-toggle:hover {
-    background-color: var(--paragraph, #ffffff);
-    color: var(--bg, #000000);
-} 
-  
 
 /* ── Contenu principal ── */
 main {
@@ -223,15 +209,6 @@ main {
     font-weight: 700;
     color: var(--headline);
     margin-bottom: 0.6rem;
-}
-
-.policy-updated {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.78rem;
-    color: var(--paragraph);
-    opacity: 0.6;
-    letter-spacing: 0.5px;
-    margin-bottom: 3rem;
 }
 
 .policy-section {
@@ -337,16 +314,6 @@ main {
     margin-top: 1rem;
 }
 
-.policy-example-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--headline);
-    opacity: 0.6;
-    margin-bottom: 0.6rem;
-}
-
 .policy-example p {
     margin-bottom: 0;
 }
@@ -384,10 +351,4 @@ footer {
     --accent:    #1d0f54; /* inchangé : reste le point chaud, comme la lumière aux fenêtres */
     --secondary: #322f4d; /* --secondary assombri, garde la même teinte violette */
     --tertiary:  #251D56; /* --tertiary assombri, sert de bordures/contours */
-}
-
-/* le footer utilise --headline comme fond en light mode ;
-   en dark mode --headline devient blanc, donc on force un fond sombre ici */
-[data-theme="dark"] .footer {
-    background-color: var(--bg);
 }
