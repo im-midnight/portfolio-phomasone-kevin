@@ -163,7 +163,7 @@ var data = {
         "card-title3" : "Mario Maker",
         "card-title4" : "Web Pages",
         "card-title5" : "Flip 7",
-        "card-desc1" : "Showcase Portfolio website developed throughout my Bachelor's Degree.",
+        "card-desc1" : "Portfolio website developed throughout my Bachelor's Degree.",
         "card-desc2" : "Golang project as a freshman. Development of a 2D simulation engine using Ebitengine",
         "card-desc3" : "End-of-year project developed in 12th grade with a team of 4 people",
         "card-desc4" : "Websites developed using HTML/CSS/JavaScript",
