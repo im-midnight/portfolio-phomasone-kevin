@@ -1,8 +1,6 @@
 (function() {
     var stored = localStorage.getItem('theme');
-    var isDark = stored
-        ? stored === 'dark'
-        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var isDark = stored === 'dark';
 
     if (isDark) {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -15,11 +13,11 @@
     link.href = isDark ? '/assets/icon-dark.webp' : '/assets/icon.webp';
 
     var faviconlink = document.createElement('link');
-    link.rel = 'icon';
-    link.type = 'image/webp';
-    link.href = isDark ? '/assets/icon-dark.webp' : '/assets/icon.webp';
+    faviconlink.id = 'favicon';
+    faviconlink.rel = 'icon';
+    faviconlink.type = 'image/webp';
+    faviconlink.href = isDark ? '/assets/icon-dark.webp' : '/assets/icon.webp';
 
     document.head.appendChild(link);
     document.head.appendChild(faviconlink);
 })();
-

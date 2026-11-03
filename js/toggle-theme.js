@@ -1,5 +1,4 @@
 const themeToggle = document.getElementById('theme-toggle-input')
-const systemDark = window.matchMedia('(prefers-color-scheme: dark)')
 
 function applyTheme(dark) {
     if (dark) {
@@ -8,20 +7,17 @@ function applyTheme(dark) {
         document.documentElement.removeAttribute('data-theme')
     }
     themeToggle.checked = dark
+
+    const favicon = document.getElementById('favicon')
+    if (favicon) {
+        favicon.href = dark ? '/assets/icon-dark.webp' : '/assets/icon.webp'
+    }
 }
 
-// Au chargement : choix fait pendant la visite, sinon on suit l'OS
-const stored = sessionStorage.getItem('theme')
-applyTheme(stored ? stored === 'dark' : systemDark.matches)
+const stored = localStorage.getItem('theme')
+applyTheme(stored === 'dark')
 
-// Le toggle change le thème pour la visite en cours (d'une page à l'autre)
 themeToggle.addEventListener('change', () => {
     applyTheme(themeToggle.checked)
-    sessionStorage.setItem('theme', themeToggle.checked ? 'dark' : 'light')
-})
-
-// Quand l'OS change, on le suit et on efface le choix du toggle
-systemDark.addEventListener('change', (e) => {
-    sessionStorage.removeItem('theme')
-    applyTheme(e.matches)
+    localStorage.setItem('theme', themeToggle.checked ? 'dark' : 'light')
 })
