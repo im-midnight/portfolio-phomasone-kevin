@@ -6,6 +6,7 @@
     --accent:    #ffd803;
     --secondary: #e3f6f5;
     --tertiary:  #bae8e8;
+    --shadow : rgba(39, 35, 67, 0.12);
 
     /* gouttières fluides réutilisées partout à la place de 60px en dur */
     --gutter: clamp(20px, 5vw, 60px);
@@ -29,6 +30,7 @@ body {
     background-color: var(--bg);
     color: var(--paragraph);
     font-family: 'Outfit', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .langWrap {
     display: inline-flex;
@@ -51,7 +53,7 @@ body {
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-    color: var(--paragraph);
+    color: #8a8a8a;
     position: relative;
     z-index: 2;
     cursor: pointer;
@@ -92,11 +94,6 @@ body {
     color: var(--headline);
 }
 
-#lang-toggle:hover {
-    background-color: var(--paragraph, #ffffff);
-    color: var(--bg, #000000);
-} 
-  
 #progress {
     z-index: 9999;
     position: fixed;
@@ -150,7 +147,7 @@ section{
     gap: 8px;
     align-items: center;
     padding: 1rem var(--gutter) 4rem;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 70px);
 }
 header {
     position: sticky;
@@ -559,7 +556,7 @@ nav {
 
 .teaser-item:hover .teaser-item-icon {
     opacity: 1;
-    color: var(--accent);
+    color: #ffd803;
     transform: translate(4px, -4px);
 }
 
@@ -567,7 +564,6 @@ nav {
     display: inline-block;
     margin-top: 2.5rem;
     font-family: 'Tanker-Regular',sans-serif;
-    letter-spacing: .02em;
     font-size: 20px;
     font-weight: 100;
     text-transform: uppercase;
@@ -687,27 +683,6 @@ nav {
     }
 }
 
-.social-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 8px 14px;
-    background: var(--bg);
-    border: 1.5px solid var(--tertiary);
-    border-radius: 100px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--headline);
-    text-decoration: none;
-    transition: all 0.2s;
-}
-.social-pill:hover {
-    background: var(--headline);
-    color: var(--accent);
-    border-color: var(--headline);
-    transform: translateY(-2px);
-}
-
 
 
 .iconSvg{
@@ -754,7 +729,7 @@ nav {
 .xp-skill-card:hover {
     transform: translateY(-4px);
     background: var(--bg);
-    box-shadow: 0 16px 40px rgba(39, 35, 67, 0.12);
+    box-shadow: 0 16px 40px rgba(89, 88, 94, 0.12);
 }
 
 .xp-skill-card-title {
@@ -853,6 +828,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
+    transition: color 0.2s, transform 0.2s;
 }
 
 .footer .row ul li{
@@ -868,10 +844,6 @@ nav {
     background-color: #fffffe;
     border-radius: 100px;
     padding: 8px 18px;
-}
-
-.footer .row ul {
-    transition: color 0.2s, transform 0.2s;
 }
 
 .footer .row ul :hover {
@@ -900,7 +872,6 @@ nav {
 
 /* ligne de copyright */
 .footer .row:last-child {
-  font-family: 'Outfit', sans-serif;
   font-size: 1.5rem;
   letter-spacing: 1px;
   color: #fffffe;
@@ -953,9 +924,6 @@ nav {
 @media (max-width: 600px) {
     .contact-wrap { padding: 3rem 1.2rem 5rem; }
     .contact-form-card { padding: 1.75rem 1.25rem; }
-    .timeline { padding-left: 2.95rem; }
-    .timeline-dot { left: -2.25rem; }
-    .timeline-header { flex-direction: column; gap: 0.4rem; }
 }
 
 /* petits téléphones : réduit encore la gouttière et les cartes du
@@ -967,18 +935,18 @@ nav {
     .name-introduction { gap: 1rem; }
     .hero-cta { gap: 8px; }
     .cta-primary, .cta-secondary { padding: 10px 20px; }
-    .timeline-card { padding: 1.25rem; }
 }
 
 
 /* ── Dark mode : dérivé de la palette Happy Hues (pas de nouvelles teintes) ── */
 [data-theme="dark"] {
-    --bg:        #1c1a2e; /* variante assombrie de --headline (#272343) */
+    --bg:        #16161a; /* variante assombrie de --headline (#272343) */
     --headline:  #fffffe; /* devient le --bg clair d'origine */
-    --paragraph: #b6b4cf; /* --paragraph éclairci pour rester lisible sur fond sombre */
-    --accent:    #402c90; /* inchangé : reste le point chaud, comme la lumière aux fenêtres */
-    --secondary: #322f4d; /* --secondary assombri, garde la même teinte violette */
-    --tertiary:  #312c56; /* --tertiary assombri, sert de bordures/contours */
+    --paragraph: #94a1b2; /* --paragraph éclairci pour rester lisible sur fond sombre */
+    --accent:    #393ea9; /* inchangé : reste le point chaud, comme la lumière aux fenêtres */
+    --secondary: #1e2a63; /* --secondary assombri, garde la même teinte violette */
+    --tertiary:  #1e2a63; /* --tertiary assombri, sert de bordures/contours */
+    --shadow: rgba(96, 95, 104, 0.12);
 }
 
 /* le footer utilise --headline comme fond en light mode ;
@@ -1000,9 +968,6 @@ nav {
 }
 [data-theme="dark"] .image-wrapper .icon-dark {
     display: block;
-}
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ── Toggle thème (même logique visuelle que .langWrap) ── */

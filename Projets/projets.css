@@ -31,16 +31,6 @@
     opacity: 0.8;
 }
 
-.section-divider {
-    max-width: 1400px;
-    margin: 0 auto 3rem;
-}
-
-.divider-line {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--tertiary), transparent);
-}
-
 
 .projects-grid{
     max-width: 1400px;
@@ -260,14 +250,7 @@
         grid-template-rows: repeat(4, 1fr);
         gap: 16px;
     }
-    .card-large {
-        grid-column: span 1;
-        }
 
-    .card-medium {
-        grid-column: span 1;
-    }
-    
 }
 
 @media screen and (max-width:470px) {
@@ -277,12 +260,5 @@
         grid-template-rows: repeat(4, 1fr);
         gap: 16px;
     }
-    .card-large {
-        grid-column: span 1;
-        }
 
-    .card-medium {
-        grid-column: span 1;
-    }
-    
 }
