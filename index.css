@@ -192,7 +192,7 @@ nav {
 }
 .nav-right a {
     padding: 8px 16px;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
     color: var(--headline);
     border-radius: 8px;
@@ -230,7 +230,7 @@ nav {
 .name{
     font-family: 'Tanker-Regular',sans-serif;
     letter-spacing: .02em;
-    font-size: clamp(2.6rem, 5vw, 4.8rem);
+    font-size: clamp(3rem, 6vw, 6rem);
     font-weight: 700;
     color: var(--headline);
     line-height: 1.05;
@@ -462,19 +462,17 @@ nav {
 
 .projets-teaser {
     width: 100%;
-    max-width: 900px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 var(--gutter);
 }
 
 .teaser-header {
     display: flex;
-    margin-bottom: 2.5rem;
     gap: 1rem;
 }
 .teaser-header-formation{
     display: flex;
-    margin-bottom: 2.5rem;
     gap: 1rem;
     justify-content: end;
 }
@@ -483,10 +481,9 @@ nav {
 .teaser-title-main {
     font-family: 'Tanker-Regular',sans-serif;
     letter-spacing: .02em;
-    font-size: clamp(4rem, 7vw, 8rem);
+    font-size: clamp(4rem, 10vw, 10rem);
     font-weight: 700;
     color: var(--headline);
-    margin-top: 0.4rem;
 }
 
 /* ── liste de projets (format "image de référence") ── */
@@ -499,7 +496,7 @@ nav {
     position: relative;
     display: block;
     padding: 2rem 0;
-    border-top: 1.5px solid var(--bg);
+    border-bottom: 1.5px solid var(--bg);
     text-decoration: none;
     color: inherit;
     transition: padding-left 0.3s ease, background-color 0.3s ease;
@@ -548,8 +545,8 @@ nav {
     opacity: 0.35;
     font-size: 0.9rem;
     transition: transform 0.25s ease, opacity 0.25s ease, color 0.25s ease;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     font-weight: 300;
 
 }
@@ -610,7 +607,7 @@ nav {
     grid-template-columns: 140px 1fr;
     gap: 1.5rem;
     padding: 2rem 0;
-    border-top: 1.5px solid var(--bg);
+    border-bottom: 1.5px solid var(--bg);
 }
 
 
@@ -692,7 +689,7 @@ nav {
 .xp-section-title {
     font-family: 'Tanker-Regular',sans-serif;
     letter-spacing: .02em;
-    font-size: clamp(3rem, 5vw, 6rem);
+    font-size: clamp(3rem, 6vw, 6rem);
     color: var(--headline);
     text-transform: uppercase;
     margin-bottom: 2rem;
